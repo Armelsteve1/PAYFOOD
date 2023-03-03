@@ -9,7 +9,7 @@ function NavigationBar() {
       </div>
       <ul className="navbar__list">
         <li className="navbar__item">
-          <a href="#" className="navbar__link navbar__link--active">Accueil</a>
+          <a href="#" className="navbar__link" >Accueil</a>
         </li>
         <li className="navbar__item">
           <a href="#" className="navbar__link">Restaurants partenaires</a>
@@ -18,7 +18,7 @@ function NavigationBar() {
           <a href="#" className="navbar__link">Mon compte</a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">Aide</a>
+          <a href="#" className="navbar__link navbar__link--active">Aide</a>
         </li>
       </ul>
     </nav>
