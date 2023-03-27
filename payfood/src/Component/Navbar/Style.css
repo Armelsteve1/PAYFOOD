@@ -32,7 +32,10 @@
     border-radius: 0.25rem;
   }
   
-  .navbar__link:hover,
+  .navbar__link:hover{
+    background-color: #7a7577;
+    color: #fff;
+  }
   .navbar__link--active {
     background-color: #F64697;
     color: #fff;
