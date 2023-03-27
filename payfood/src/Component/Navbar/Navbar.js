@@ -15,6 +15,9 @@ function NavigationBar() {
           <a href="#" className="navbar__link">Restaurants partenaires</a>
         </li>
         <li className="navbar__item">
+          <a href="#" className="navbar__link">Payement & fidélité</a>
+        </li>
+        <li className="navbar__item">
           <a href="#" className="navbar__link">Mon compte</a>
         </li>
         <li className="navbar__item">
