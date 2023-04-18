@@ -1,0 +1,107 @@
+
+.hero {
+  position: absolute;
+  width: 1920px;
+  height: 9650px;
+  left: 202px;
+  top: 216px;
+}
+.slogant_landing {
+  position: absolute;
+  width: 462px;
+  height: 52px;
+  left: 0px;
+  top: 0.5px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 60px;
+  /* or 333% */
+
+  display: flex;
+  align-items: center;
+
+  color: #34373E;
+}
+
+.decouvert {
+  width: 470px;
+  height: 155px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  color: #34373E;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.decouvert p {
+  display: block;
+}
+
+.decouvert p:last-child {
+  color: #FF3C6E;
+  margin-bottom: -80px;
+  margin-left: -359px;
+}
+.container {
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text1 {
+  position: absolute;
+  width: 499px;
+  height: 80px;
+  left: 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #000000;
+}
+
+.text1:nth-child(1) {
+  top: 220px;
+}
+
+.text1:nth-child(2) {
+  top: 310px;
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 23.0625px 12px 24px;
+
+  position: absolute;
+  width: 212.06px;
+  height: 48px;
+  left: 0px;
+  
+  top: 481px;
+
+  background: #FF3C6E;
+  border-radius: 999px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: #FFFF;
+}
+
+
+
+
