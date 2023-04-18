@@ -12,7 +12,7 @@ function LandingPage() {
 
   return (
     <div className="landing-page">
-      <main>
+      <main className='contenaire'>
         <section className="hero">
           <div className='slogant_landing'>Boostez votre chiffre d'affaires grâce à Payfood </div>
           <div className='decouvert'>
@@ -29,6 +29,10 @@ function LandingPage() {
             </div>
           </div>
           <button className='contact'>Contactez-nous</button>
+          {/* <div className="circle"></div> */}
+        </section>
+        <section className='deuxieme'>
+
         </section>
         </main>
         </div> 

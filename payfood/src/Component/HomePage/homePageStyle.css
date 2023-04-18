@@ -1,4 +1,6 @@
-
+.contenaire{
+  display: flex;
+}
 .hero {
   position: absolute;
   width: 1920px;
@@ -101,7 +103,24 @@
   font-size: 20px;
   color: #FFFF;
 }
-
+/* .circle {
+    border-radius: 45%;
+    background-color: #FF3C6E;
+    position: absolute;
+    width: 788px;
+    height: 788px;
+    left: 1410px;
+    top: -348px;
+} */
+.deuxieme{
+  position: absolute;
+  height: 905px;
+  left: 0px;
+  right: 0px;
+  top: 95%;
+  margin-top: "80px";
+  background: #000000;
+}
 
 
 
