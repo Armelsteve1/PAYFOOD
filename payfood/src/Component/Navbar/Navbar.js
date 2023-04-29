@@ -5,11 +5,14 @@ function NavigationBar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src={logo} alt='logo de payfood'></img>
+        <img src={logo} alt='logo de payfood' style={{}}></img>
       </div>
       <ul className="navbar__list">
         <li className="navbar__item">
           <a href="#" className="navbar__link" >Accueil</a>
+        </li>
+        <li className="navbar__item">
+          <a href="#" className="navbar__link" >Aide</a>
         </li>
         <li className="navbar__item">
           <a href="#" className="navbar__link">Restaurants partenaires</a>
