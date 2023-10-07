@@ -1,6 +1,6 @@
 import React from "react";
 import "./homePageStyle.css";
-import logo from "./payfood-logo.svg";
+import phone from "./phone-maquette.svg";
 function LandingPage() {
   // const userCredit = 50; // Crédits de fidélité de l'utilisateur
 
@@ -18,30 +18,20 @@ function LandingPage() {
         <section className="hero">
           <div className="content">
             <div className="slogan-landing">
-              Boostez votre chiffre d'affaires grâce à Payfood
+              <p>Ne vous préoccupez plus de l’addition.</p>
             </div>
             <div className="decouvert">
               <p>Découvrez</p>
-              <p> Payfood.</p>
+              <p> Payfood</p>
             </div>
             <div className="text">
               <p>
-                Chez PayFood, nous accompagnons les restaurateurs les plus
-                talentueux d'île de France. Nous avons créé la plateforme
-                d'engagement ultime pour les restaurants, les hôtels, les bars,
-                les salles de réception et les événements.
-              </p>
-              <p>
-                Avec PayFood, rejoignez une communauté de milliers de
-                restaurateurs qui servent, stimulent, et connectent leurs clients
-                comme jamais auparavant. Faites partie de cette aventure et
-                réinventez l'expérience culinaire de vos clients grâce à notre
-                plateforme !
+                Chez PayFood, nous accompagnons les restaurateurs les plus talentueux d'île de France. Nous avons créé la plateforme d'engagement ultime pour les restaurants, les hôtels, les bars, les salles de réception et les événements.
               </p>
             </div>
-            <button className="contact">Contactez-nous</button>
+            <button className="contact-button">Contactez-nous</button>
           </div>
-          <img className="phone" src={logo} alt="Phone" />
+          <img className="phone" src={phone} alt="Phone" />
         </section>
         <section className="deuxieme">
           <div></div>

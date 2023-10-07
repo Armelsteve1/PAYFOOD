@@ -19,14 +19,14 @@
 .content {
   width: 50%;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserat', sans-serif;
   color: #34373E;
 }
 
 .slogan-landing {
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: bolder;
   line-height: 1.5;
+  margin: 20px 0px;
 }
 
 .decouvert {
@@ -36,11 +36,13 @@
   color: #34373E;
 }
 
+.decouvert p {
+  margin: 0;
+}
+
 .decouvert p:last-child {
+  margin: 0 0 20px;
   color: #FF3C6E;
-  margin-bottom: -2rem;
-  margin-left: -12%;
-  margin-top: -53px;
 }
 
 .text {
@@ -51,23 +53,18 @@
   color: #000000;
 }
 
-/* .contact {
-  display: block;
-  margin-top: 20px;
-  padding: 1rem 2rem;
-  width: fit-content;
-  background: #FF3C6E;
-  border-radius: 999px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #FFFFFF;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-} */
+.contact-button {
+  background-color: #ff3c6e;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  margin: 20px 0;
+}
 
-.contact:hover {
+.contact-button:hover {
   background: #ff245a;
 }
 
