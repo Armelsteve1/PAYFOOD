@@ -47,7 +47,9 @@ function LandingPage() {
                 <input type="email" id="email" name="email" placeholder="Email" required />
                 <input type="tel" id="number" name="number" placeholder="Téléphone" required />
                 <input type="text" id="name" placeholder="Entreprise" name=" name" required />
-                <button type="submit">Submit</button>
+                <div className="button-container">
+                  <button type="submit">Submit</button>
+                </div>
               </form>
             </div>
           </div>
