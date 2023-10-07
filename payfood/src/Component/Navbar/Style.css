@@ -2,9 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px;
+  padding: 0.5em 4em;
+  font-family: "Gill Sans", sans-serif;
+  background-color: transparent;
+  color: black;
+  border-bottom: 1px solid #0000000f;
 }
+
 
 .navbar__list {
   list-style-type: none;
@@ -18,7 +22,7 @@
 
 .navbar__link {
   text-decoration: none;
-  color: white;
+  color: black; /* Set text color to black */
 }
 
 .navbar__logo img {
@@ -34,6 +38,6 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: black; /* Set background color to black */
   margin: 3px 0;
 }
