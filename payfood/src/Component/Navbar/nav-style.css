@@ -22,7 +22,14 @@
 
 .navbar__link {
   text-decoration: none;
-  color: black; /* Set text color to black */
+  color: black;
+}
+
+.navbar__link.contact {
+  background-color: #ff3c6e;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
 }
 
 .navbar__logo img {
