@@ -1,67 +1,49 @@
-.contenaire {
+.landing-page {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
 }
 
 .hero {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 100vh;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-.slogant_landing {
-  position: absolute;
-    width: 50%;
-    /* height: auto; */
-    /* top: 14%; */
-    /* left: 6%; */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-top: 109px;
-    margin-left: 40px;
+.content {
+  width: 50%;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #34373E;
 }
 
+.slogan-landing {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
 
 .decouvert {
-  width: 50%;
-    max-width: 447px;
-    /* height: auto; */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 4rem;
-    line-height: 4rem;
-    color: #34373E;
-    margin-top: 14%;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #34373E;
 }
 
 .decouvert p:last-child {
-    color: #FF3C6E;
-    margin-bottom: -2rem;
-    margin-left: -12%;
-    margin-top: -53px;
+  color: #FF3C6E;
+  margin-bottom: -2rem;
+  margin-left: -12%;
+  margin-top: -53px;
 }
 
-.container {
-    width: 50%;
-    max-width: 1000px;
-    margin: 7% auto;
-    display: flex;
-    margin-left: 80px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.text1 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
-  font-family: 'Montserrat';
-  font-style: normal;
+.text {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.25;
@@ -70,50 +52,37 @@
 }
 
 /* .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-top: 20px;
   padding: 1rem 2rem;
-  width: 50%;
-  max-width: 232.06px;
-  height: 48px;
-  margin-top: -3%;
+  width: fit-content;
   background: #FF3C6E;
   border-radius: 999px;
   text-align: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  color: #FFFF;
-  position: relative;
-  margin-left: 7%;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
 } */
 
-.deuxieme {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  /* height: auto; */
-  background: #000000;
-
-  margin-top: -166px;
+.contact:hover {
+  background: #ff245a;
 }
 
 .phone {
-  position: absolute;
-  width: auto;
-  max-width: 944px;
+  max-width: 100%;
   height: auto;
-  margin-top: 1%;
-  margin-left: 24%;
-  transform: translateX(-50%);
-  z-index: -1;
 }
 
-.circle{
-  position: relative;
-  left: auto;
-}
+/* @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.contenairetext{
-  position: absolute;
-}
+  .phone {
+    margin-top: 20px;
+  }
+} */
