@@ -13,6 +13,7 @@
   align-items: center;
   width: 100%;
   padding: 20px;
+  margin: 20px 0;
 }
 
 .content {
@@ -82,28 +83,31 @@
     margin-top: 20px;
   }
 } */
-
 .deuxieme {
-  background-color: black;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  background-color: #000000;
 }
 
-.side-by-side-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.deuxieme div {
+  flex: 0 0 auto;
+  padding: 10px;
+  margin: 50px 0;
+  text-align: center;
 }
 
-.side-by-side-item {
-  padding: 20px;
-  border: 1px solid #ccc;
-  background-color: white;
-  box-sizing: border-box;
-  margin: 0;
+.deuxieme div span {
+  display: block;
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+  margin: 5px 0;
+  font-family: Montserat, sans-serif;
+}
+
+.deuxieme .title span:last-child {
+  color: #ff245a;
+  margin: 0 0 20px;
 }
