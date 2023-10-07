@@ -84,30 +84,53 @@
   }
 } */
 .deuxieme {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #000000;
-}
-
-.deuxieme div {
-  flex: 0 0 auto;
   padding: 10px;
   margin: 50px 0;
   text-align: center;
+  margin: auto;
+  width: 50%;
 }
 
-.deuxieme div span {
+.left {
+  flex: 1;
+  padding: 10px;
+}
+
+.right {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.left span {
   display: block;
   font-weight: 600;
   font-size: 2rem;
   color: white;
   margin: 5px 0;
-  font-family: Montserat, sans-serif;
+  font-family: Montserrat, sans-serif;
+  text-align: start;
 }
 
-.deuxieme .title span:last-child {
+.left span:nth-last-child(2) {
   color: #ff245a;
   margin: 0 0 20px;
+}
+
+.left p {
+  color: #d3d3d3;
+  font-family: Montesrat, sans-serif;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 100;
 }
