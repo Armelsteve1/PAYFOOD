@@ -84,13 +84,16 @@
     margin-top: 20px;
   }
 } */
+
 .deuxieme {
   background-color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 10px;
-  margin: 50px 0;
 }
+
 
 .container {
   display: flex;
@@ -123,6 +126,16 @@
   text-align: start;
 }
 
+.all-in span {
+  display: block;
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+  margin: 5px 0;
+  font-family: Montserrat, sans-serif;
+  text-align: start;
+}
+
 .left span:nth-last-child(2) {
   color: #ff245a;
   margin: 0 0 20px;
@@ -135,6 +148,16 @@
   font-size: 12px;
   line-height: 20px;
   font-weight: 100;
+}
+
+.all-in p {
+  color: white;
+  font-family: Montesrat, sans-serif;
+  text-align: start;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 50;
+
 }
 
 .deuxieme+.hero {
@@ -181,4 +204,60 @@
 .button-container {
   margin-top: 10px;
   align-self: flex-end;
+}
+
+.additional-div {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+span.highlighted-text {
+  color: #ff245a;
+  text-decoration: underline;
+}
+
+.right p {
+  color: white;
+  font-family: Montesrat, sans-serif;
+  text-align: start;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 50;
+  text-align: justify;
+
+}
+
+.quote-saying {
+  border: 1px solid #ff3c6e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.quote-icon {
+  font-size: 50px;
+  padding: 8px 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container.with-quote {
+  align-items: initial;
+}
+
+.container.with-quote p {
+  color: white;
+}
+
+.container.with-quote span {
+  display: block;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.container.with-quote span:nth-child(4),
+.container.with-quote span:nth-child(5) {
+  color: #ff3c6e;
+  margin: inherit;
 }

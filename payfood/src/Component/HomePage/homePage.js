@@ -54,7 +54,31 @@ function LandingPage() {
             </div>
           </div>
         </section>
-
+        <section className="deuxieme">
+          <div className="container">
+            <div className="all-in">
+              <span>L'ingrédient dont <span className="highlighted-text">tous</span> les restaurants</span>
+              <span>ont besoin</span>
+              <p>Payfood est le moteur de croissance qui révolutionne la façon dont les clients s'engagent, paient, et restent fidèles à votre marque.</p>
+            </div>
+          </div>
+        </section>
+        <section className="deuxieme">
+          <div className="container with-quote">
+            <div className="left">
+              <p>Nous apportons un soutien aux meilleurs opérateurs en les aidant à prendre le contrôle de leurs clients, de leurs données et de leurs finances.</p>
+            </div>
+            <div className="right">
+              <div className="quote-saying">
+                <span className="quote-icon">&ldquo;</span>
+                <p>Personnel très accueillant et aimable ! Repas très bon et à petit prix ! Mais surtout, je règle ma commande rapidement !</p>
+                <span>Mélanie Dubois</span>
+                <span>Restaurant Asian</span>
+                <span>Foody - Nice</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main >
     </div >
   );
