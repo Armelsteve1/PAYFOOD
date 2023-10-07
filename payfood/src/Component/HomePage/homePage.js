@@ -42,7 +42,7 @@ function LandingPage() {
             <button className="contact">Contactez-nous</button>
           </div>
           <div className="circle">
-            <img className="phone" src={phone}></img>
+            {/* <img className="phone" src={phone}></img> */}
           </div>
         </section>
         <section className="deuxieme">
