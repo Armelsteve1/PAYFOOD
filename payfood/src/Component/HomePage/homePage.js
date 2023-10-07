@@ -34,7 +34,15 @@ function LandingPage() {
           <img className="phone" src={phone} alt="Phone" />
         </section>
         <section className="deuxieme">
-          <div></div>
+          <div className="side-by-side-container">
+            <div className="side-by-side-item">
+              <p>Rejoignez</p>
+              <p>l'expérience</p>
+              <p>Payfood</p>
+              <p>Vous recevrez une réponse dans les 24 heures. Nous vous expliquerons en détails comment nous pouvons vous aider à alimenter et à développer votre marque dans le cadre du budget indiqué.</p>
+            </div>
+            <div className="side-by-side-item">Content 2</div>
+          </div>
         </section>
       </main >
     </div >
