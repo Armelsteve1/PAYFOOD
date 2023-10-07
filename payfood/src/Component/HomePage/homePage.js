@@ -79,6 +79,40 @@ function LandingPage() {
             </div>
           </div>
         </section>
+        <section className="third">
+          <div className="container">
+            <div className="section-header">
+              <span className="section-title">Goûte ça !</span>
+              <span className="section-description">Avec Payfood, vous pourriez...</span>
+            </div>
+            <div className="grid-container">
+              <div className="grid-item">
+                <h3><icon>&gt;</icon> 8x</h3>
+                <p>augmentation des dépenses mensuelles des clients</p>
+              </div>
+              <div className="grid-item">
+                <h3><icon>&gt;</icon> 10x</h3>
+                <p>des données clients exploitables</p>
+              </div>
+              <div className="grid-item">
+                <h3><icon>&gt;</icon> 80%</h3>
+                <p>augmentation du coût moyenne d'une commande</p>
+              </div>
+              <div className="grid-item">
+                <h3><icon>&gt;</icon> 250%</h3>
+                <p>taux de rétention et de visites de retour</p>
+              </div>
+              <div className="grid-item">
+                <h3><icon>&gt;</icon> 14m</h3>
+                <p>temps gagné par serveur par table</p>
+              </div>
+              <div className="grid-item">
+                <h3><icon>&gt;</icon> 65%</h3>
+                <p>Deviennent super fans</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main >
     </div >
   );
