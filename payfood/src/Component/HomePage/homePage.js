@@ -1,6 +1,7 @@
 import React from "react";
 import "./homePageStyle.css";
 import phone from "./phone-maquette.svg";
+import vector from "./icon-vector.svg";
 function LandingPage() {
   // const userCredit = 50; // Crédits de fidélité de l'utilisateur
 
@@ -29,11 +30,16 @@ function LandingPage() {
                 Chez PayFood, nous accompagnons les restaurateurs les plus talentueux d'île de France. Nous avons créé la plateforme d'engagement ultime pour les restaurants, les hôtels, les bars, les salles de réception et les événements.
               </p>
             </div>
-            <button className="contact-button">Contactez-nous</button>
+            <button className="contact-button" onClick={() => {
+              const contactPart = document.getElementById("contact-us");
+              if (contactPart) {
+                contactPart.scrollIntoView({ behavior: "smooth" });
+              }
+            }}>Contactez-nous</button>
           </div>
           <img className="phone" src={phone} alt="Phone" />
         </section>
-        <section className="deuxieme">
+        <section className="deuxieme" id="contact-us">
           <div className="container">
             <div className="left">
               <span>Rejoignez</span>
@@ -79,7 +85,7 @@ function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="third">
+        <section className="third" id="about-us">
           <div className="container">
             <div className="section-header">
               <span className="section-title">Goûte ça !</span>
@@ -146,6 +152,23 @@ function LandingPage() {
                   <h3>Tous les ingrédients pour assurer votre croissance</h3>
                   <p>Avec Payfood, vous bénéficiez d'une visibilité accrue auprès d'une base d'utilisateurs croissante. Nous vous connectons avec une communauté d'utilisateurs avides de nouvelles expériences culinaires. Vous aurez l'opportunité de toucher de nouveaux clients et d'accroître votre visibilité, vous permettant ainsi d'attirer davantage de personnes vers votre établissement.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="fourth">
+          <div className="container">
+            <div className="all-in">
+              <span>Gusto,</span>
+              <span>ajoutez de la magie à l’expérience</span>
+              <span>Votre monnaie virtuelle</span>
+              <p>L'ingrédient secret qui fait la différence. Vous possédez et créez votre propre monnaie virtuelle !</p>
+              <div className="table-without-table">
+                <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
+                <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
+                <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
+                <p>Gusto, ajoutez de la magie à votre expérience.</p>
+                <p>Votre propre monnaie virtuelle.</p>
               </div>
             </div>
           </div>

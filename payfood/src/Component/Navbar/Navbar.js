@@ -1,6 +1,6 @@
 import React from 'react';
-import './nav-style.css'; 
-import logo from  './payfood-logo.svg'
+import './nav-style.css';
+import logo from './payfood-logo.svg'
 function NavigationBar() {
   return (
     <nav className="navbar">
@@ -15,7 +15,7 @@ function NavigationBar() {
           <a href="#restaurants-partenaires" className="navbar__link">Restaurants partenaires</a>
         </li>
         <li className="navbar__item">
-          <a href="#contact" className="navbar__link contact">Contact</a>
+          <a href="#contact-us" className="navbar__link contact">Contact</a>
         </li>
       </ul>
     </nav>

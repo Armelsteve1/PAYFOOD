@@ -410,3 +410,44 @@ span.highlighted-text {
   background-size: cover;
   background-position: center center;
 }
+
+.fourth .container .all-in span {
+  display: block;
+  font-weight: 600;
+  font-size: 4.3rem;
+  color: #333;
+  font-family: Montserrat, sans-serif;
+  text-align: start;
+}
+
+.fourth .container .all-in span:nth-child(3) {
+  display: block;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #ff3c6e;
+  font-family: Montserrat, sans-serif;
+  text-align: start;
+  margin: 20px 0;
+}
+
+.fourth .container .all-in p {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  font-family: Montserrat, sans-serif;
+  text-align: start;
+  line-height: 1.2;
+}
+
+.fourth .container .table-without-table p {
+  border-top: 1px solid rgba(255, 216, 226, 1);
+  border-bottom: 1px solid rgba(255, 216, 226, 1);
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
