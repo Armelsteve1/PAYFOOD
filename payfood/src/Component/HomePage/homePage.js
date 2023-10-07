@@ -42,7 +42,13 @@ function LandingPage() {
               <p>Vous recevrez une réponse dans les 24 heures. Nous vous expliquerons en détail comment nous pouvons vous aider à alimenter et à développer votre marque dans le cadre du budget indiqué.</p>
             </div>
             <div className="right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices libero.
+              <form className="contact-form">
+                <input type="text" id="name" placeholder="Nom et prénom" name=" name" required />
+                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="tel" id="number" name="number" placeholder="Téléphone" required />
+                <input type="text" id="name" placeholder="Entreprise" name=" name" required />
+                <button type="submit">Submit</button>
+              </form>
             </div>
           </div>
         </section>
