@@ -113,6 +113,44 @@ function LandingPage() {
             </div>
           </div>
         </section>
+        <section className="fourth">
+          <div className="container">
+            <h2>Votre moteur de croissance et d'engagement</h2>
+            <div className="grid-container">
+              <div className="grid-row">
+                <div className="grid-item item1">
+                  <h3>Alimentez votre entreprise en créant votre propre devise.</h3>
+                  <p>Nous avons créer un puissant système de fidélité prépayé pour débloquer une incroyable puissance de marketing et de financement.</p>
+                </div>
+                <div className="grid-item item2">
+                  <h3>Construisez votre marque !</h3>
+                  <p>Le puissant portefeuille marketing de Payfood vous permet de créer, cibler et interagir avec des fans et votre communauté de marque. Nourrissez et récompensez les gourmets qui comptent le plus. Au lieu que Google, Instagram et d'autres accèdent à votre portefeuille, accédez au portefeuille de vos clients et fidélisez-les dès aujourd'hui.</p>
+                </div>
+              </div>
+              <div className="grid-row">
+                <div className="grid-item item3">
+                  <h3>Payer, gagner, savourer :</h3>
+                  <p>Payfood vous propose bien plus qu'un simple moyen de paiement. Chaque repas devient une occasion de gagner et de savourer. Laissez-vous surprendre par des recommandations personnalisées. </p>
+                </div>
+                <div className="grid-item item4">
+                  <h3>Datalicieux.</h3>
+                  <p>Possédez vos données et utilisez-les comme vous le souhaitez</p>
+                </div>
+              </div>
+              <div className="grid-row">
+                <div className="grid-item item5">
+                  <h3>Impactez chaque client.</h3>
+                  <p>Augmentez le nombre de visiteurs et le volume des commandes grâce aux codes QR intelligents et au moteur de fidélisation de Payfood. Impactez-les aujourd'hui pour que chaque visite soit plus intéressante demain.</p>
+                </div>
+                <div className="grid-item item6">
+                  <h3>Tous les ingrédients pour assurer votre croissance</h3>
+                  <p>Avec Payfood, vous bénéficiez d'une visibilité accrue auprès d'une base d'utilisateurs croissante. Nous vous connectons avec une communauté d'utilisateurs avides de nouvelles expériences culinaires. Vous aurez l'opportunité de toucher de nouveaux clients et d'accroître votre visibilité, vous permettant ainsi d'attirer davantage de personnes vers votre établissement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </main >
     </div >
   );
