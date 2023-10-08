@@ -3,7 +3,7 @@ import "./homePageStyle.css";
 import phone from "./phone-maquette.svg";
 import vector from "./icon-vector.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import resto1 from "./resto1.svg";
 import resto2 from "./resto2.svg";
 import resto3 from "./resto3.svg";
@@ -129,8 +129,8 @@ function LandingPage() {
             </div>
           </div>
         </section>
-        {/* <section className="fourth">
-          <div className="container">
+        <section className="fourth">
+          < div className="container">
             <h2>Votre moteur de croissance et d'engagement</h2>
             <div className="grid-container">
               <div className="grid-row">
@@ -165,51 +165,51 @@ function LandingPage() {
               </div>
             </div>
           </div>
-        </section> */}
-        {/* <section className="fourth"> */}
-        {/* <div className="container"> */}
-        {/* <div className="all-in">
-          <span>Gusto,</span>
-          <span>ajoutez de la magie à l’expérience</span>
-          <span>Votre monnaie virtuelle</span>
-          <p>L'ingrédient secret qui fait la différence. Vous possédez et créez votre propre monnaie virtuelle !</p>
-          <div className="table-without-table">
-            <div className="icon-and-text">
-              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-              <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
-            </div>
-            <div className="icon-and-text">
-              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-              <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
-            </div>
-            <div className="icon-and-text">
-              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-              <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
-            </div>
-            <div className="icon-and-text">
-              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-              <p>Gusto, ajoutez de la magie à votre expérience.</p>
-            </div>
-            <div className="icon-and-text">
-              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-              <p>Votre propre monnaie virtuelle.</p>
+        </section >
+        <section className="fourth">
+          <div className="container">
+            < div className="all-in">
+              <span>Gusto,</span>
+              <span>ajoutez de la magie à l’expérience</span>
+              <span>Votre monnaie virtuelle</span>
+              <p>L'ingrédient secret qui fait la différence. Vous possédez et créez votre propre monnaie virtuelle !</p>
+              <div className="table-without-table">
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Gusto, ajoutez de la magie à votre expérience.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Votre propre monnaie virtuelle.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div> */}
-        {/* </div> */}
-        {/* </section> */}
-        {/* <section className="fifth">
-          <div className="container">
+        </section >
+        <section className="fifth">
+          < div className="container">
             <h2>Section Title</h2>
-            <div className="grid-container"> */}
-        {/* {restoPaths.map((restoPath, index) => (
+            <div className="grid-container">
+              {restoPaths.map((restoPath, index) => (
                 <div className="grid-item" key={index}>
                   <img src={restoPath} alt={`Image ${index + 1}`} />
                 </div>
-              ))} */}
-        {/* </div>
-          </div>
-        </section> */}
+              ))}
+            </div >
+          </div >
+        </section >
       </main >
     </div >
   );
