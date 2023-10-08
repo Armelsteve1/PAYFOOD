@@ -219,7 +219,7 @@ function LandingPage() {
         </section >
         <section className="fifth">
           <div className="container">
-            {/* <h2>Découvrez l'ingrédient secret utilisé par<span> xxx, xxx, et xxxx</span> - et apprécié par plus de 500 établissements, dont le nombre augmente de jour en jour.</h2> */}
+            <h2>Les meilleurs restaurateurs utilisent <span>Payfood</span></h2>
           </div >
           <div className="image-grid">
             <div className="single-image">
@@ -236,6 +236,24 @@ function LandingPage() {
             </div>
           </div>
         </section >
+        <section className="deuxieme">
+          <div className="container">
+            <div className="all-in">
+              <span>La recette parfaite</span>
+              <p>Nous nous connectons à tous les ingrédients dont vous avez besoin pour grandir. Des centaines d'intégrations et bien d'autres à venir.</p>
+            </div>
+          </div>
+        </section>
+        <section className="deuxieme">
+          <div className="container">
+            <div className="all-in">
+              <span>Envie de goûter ?</span>
+              <span>Cela ne coûte rien de commencer.</span>
+              <p>Payfood est spécialement conçu pour l'hospitalité et soutenu par un soutien humain ultra-rapide. Et nous sommes investis à 100 % dans votre réussite.</p>
+              <p>Discutons aujourd'hui et voyons comment nous pouvons aider votre entreprise à se développer.</p>
+            </div>
+          </div>
+        </section>
       </main >
     </div >
   );
