@@ -2,6 +2,8 @@ import React from "react";
 import "./homePageStyle.css";
 import phone from "./phone-maquette.svg";
 import vector from "./icon-vector.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 function LandingPage() {
   // const userCredit = 50; // Crédits de fidélité de l'utilisateur
 
@@ -164,12 +166,28 @@ function LandingPage() {
               <span>Votre monnaie virtuelle</span>
               <p>L'ingrédient secret qui fait la différence. Vous possédez et créez votre propre monnaie virtuelle !</p>
               <div className="table-without-table">
-                <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
-                <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
-                <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
-                <p>Gusto, ajoutez de la magie à votre expérience.</p>
-                <p>Votre propre monnaie virtuelle.</p>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Gusto, ajoutez de la magie à votre expérience.</p>
+                </div>
+                <div className="icon-and-text">
+                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+                  <p>Votre propre monnaie virtuelle.</p>
+                </div>
               </div>
+
             </div>
           </div>
         </section>
