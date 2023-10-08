@@ -198,9 +198,9 @@ function LandingPage() {
             </div>
           </div>
         </section >
-        <section className="fifth">
+        <section className="fifth" id="restaurants-partenaires">
           < div className="container">
-            <h2>Section Title</h2>
+            <h2>Découvrez l'ingrédient secret utilisé par<span> xxx, xxx, et xxxx</span> - et apprécié par plus de 500 établissements, dont le nombre augmente de jour en jour.</h2>
             <div className="grid-container">
               {restoPaths.map((restoPath, index) => (
                 <div className="grid-item" key={index}>
