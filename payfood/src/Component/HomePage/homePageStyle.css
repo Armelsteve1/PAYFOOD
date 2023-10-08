@@ -512,3 +512,46 @@ span.highlighted-text {
 .fifth .container span {
   color: #ff3c6e;
 }
+
+.image-grid {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center; */
+  text-align: right;
+  display: inline-grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.image-grid img {
+  width: 250px;
+  height: auto;
+}
+
+.single-image {
+  grid-column: 3;
+  padding: 15px 10px
+}
+
+.two-images {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  margin: -20px 0 0;
+}
+
+.three-images {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.image-grid img {
+  border: 0.8px solid rgb(255, 94, 134);
+  border-radius: 15px;
+  padding: 15px 10px;
+  margin: 8px;
+}

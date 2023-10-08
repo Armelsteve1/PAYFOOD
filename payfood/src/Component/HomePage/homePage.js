@@ -18,6 +18,13 @@ import resto11 from "./resto11.svg";
 import resto12 from "./resto12.svg";
 import resto13 from "./resto13.svg";
 
+import restoGrid1 from "./resto-grid1.svg";
+import restoGrid2 from "./resto-grid2.svg";
+import restoGrid3 from "./resto-grid3.svg";
+import restoGrid4 from "./resto-grid4.svg";
+import restoGrid5 from "./resto-grid5.svg";
+import restoGrid6 from "./resto-grid6.svg";
+import restoGrid7 from "./resto-grid7.svg";
 
 function LandingPage() {
 
@@ -199,7 +206,7 @@ function LandingPage() {
           </div>
         </section >
         <section className="fifth" id="restaurants-partenaires">
-          < div className="container">
+          <div className="container">
             <h2>Découvrez l'ingrédient secret utilisé par<span> xxx, xxx, et xxxx</span> - et apprécié par plus de 500 établissements, dont le nombre augmente de jour en jour.</h2>
             <div className="grid-container">
               {restoPaths.map((restoPath, index) => (
@@ -209,6 +216,25 @@ function LandingPage() {
               ))}
             </div >
           </div >
+        </section >
+        <section className="fifth">
+          <div className="container">
+            {/* <h2>Découvrez l'ingrédient secret utilisé par<span> xxx, xxx, et xxxx</span> - et apprécié par plus de 500 établissements, dont le nombre augmente de jour en jour.</h2> */}
+          </div >
+          <div className="image-grid">
+            <div className="single-image">
+              <img src={restoGrid1} alt="resto-partenaires-1" />
+            </div>
+            <div className="two-images">
+              <img src={restoGrid2} alt="resto-partenaires-2" />
+              <img src={restoGrid3} alt="resto-partenaires-3" />
+            </div>
+            <div className="three-images">
+              <img src={restoGrid4} alt="resto-partenaires-4" />
+              <img src={restoGrid5} alt="resto-partenaires-5" />
+              <img src={restoGrid6} alt="resto-partenaires-6" />
+            </div>
+          </div>
         </section >
       </main >
     </div >
