@@ -3,17 +3,25 @@ import "./homePageStyle.css";
 import phone from "./phone-maquette.svg";
 import vector from "./icon-vector.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
-function LandingPage() {
-  // const userCredit = 50; // Crédits de fidélité de l'utilisateur
+// import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import resto1 from "./resto1.svg";
+import resto2 from "./resto2.svg";
+import resto3 from "./resto3.svg";
+import resto4 from "./resto4.svg";
+import resto5 from "./resto5.svg";
+import resto6 from "./resto6.svg";
+import resto7 from "./resto7.svg";
+import resto8 from "./resto8.svg";
+import resto9 from "./resto9.svg";
+import resto10 from "./resto10.svg";
+import resto11 from "./resto11.svg";
+import resto12 from "./resto12.svg";
+import resto13 from "./resto13.svg";
 
-  // const handleSignUp = (e) => {
-  //   e.preventDefault();
-  //   // Code pour enregistrer l'utilisateur avec son adresse email
-  //   alert(
-  //     `Félicitations ! Vous avez reçu un bon de réduction de 20% sur votre premier achat et vous avez actuellement ${userCredit} crédits de fidélité.`
-  //   );
-  // };
+
+function LandingPage() {
+
+  const restoPaths = [resto1, resto2, resto3, resto4, resto5, resto6, resto7, resto8, resto9, resto10, resto11, resto12, resto13];
 
   return (
     <div className="landing-page">
@@ -121,7 +129,7 @@ function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="fourth">
+        {/* <section className="fourth">
           <div className="container">
             <h2>Votre moteur de croissance et d'engagement</h2>
             <div className="grid-container">
@@ -157,41 +165,51 @@ function LandingPage() {
               </div>
             </div>
           </div>
-        </section>
-        <section className="fourth">
-          <div className="container">
-            <div className="all-in">
-              <span>Gusto,</span>
-              <span>ajoutez de la magie à l’expérience</span>
-              <span>Votre monnaie virtuelle</span>
-              <p>L'ingrédient secret qui fait la différence. Vous possédez et créez votre propre monnaie virtuelle !</p>
-              <div className="table-without-table">
-                <div className="icon-and-text">
-                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-                  <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
-                </div>
-                <div className="icon-and-text">
-                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-                  <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
-                </div>
-                <div className="icon-and-text">
-                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-                  <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
-                </div>
-                <div className="icon-and-text">
-                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-                  <p>Gusto, ajoutez de la magie à votre expérience.</p>
-                </div>
-                <div className="icon-and-text">
-                  <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-                  <p>Votre propre monnaie virtuelle.</p>
-                </div>
-              </div>
-
+        </section> */}
+        {/* <section className="fourth"> */}
+        {/* <div className="container"> */}
+        {/* <div className="all-in">
+          <span>Gusto,</span>
+          <span>ajoutez de la magie à l’expérience</span>
+          <span>Votre monnaie virtuelle</span>
+          <p>L'ingrédient secret qui fait la différence. Vous possédez et créez votre propre monnaie virtuelle !</p>
+          <div className="table-without-table">
+            <div className="icon-and-text">
+              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+              <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
+            </div>
+            <div className="icon-and-text">
+              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+              <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
+            </div>
+            <div className="icon-and-text">
+              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+              <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
+            </div>
+            <div className="icon-and-text">
+              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+              <p>Gusto, ajoutez de la magie à votre expérience.</p>
+            </div>
+            <div className="icon-and-text">
+              <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
+              <p>Votre propre monnaie virtuelle.</p>
             </div>
           </div>
-        </section>
-
+        </div> */}
+        {/* </div> */}
+        {/* </section> */}
+        {/* <section className="fifth">
+          <div className="container">
+            <h2>Section Title</h2>
+            <div className="grid-container"> */}
+        {/* {restoPaths.map((restoPath, index) => (
+                <div className="grid-item" key={index}>
+                  <img src={restoPath} alt={`Image ${index + 1}`} />
+                </div>
+              ))} */}
+        {/* </div>
+          </div>
+        </section> */}
       </main >
     </div >
   );
