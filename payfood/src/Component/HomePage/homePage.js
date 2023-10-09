@@ -236,21 +236,27 @@ function LandingPage() {
             </div>
           </div>
         </section >
-        <section className="deuxieme">
+        <section className="six">
           <div className="container">
-            <div className="all-in">
+            <div className="all-in linear">
               <span>La recette parfaite</span>
               <p>Nous nous connectons à tous les ingrédients dont vous avez besoin pour grandir. Des centaines d'intégrations et bien d'autres à venir.</p>
             </div>
           </div>
         </section>
-        <section className="deuxieme">
+        <section className="seven">
           <div className="container">
-            <div className="all-in">
+            <div className="all-in black">
               <span>Envie de goûter ?</span>
               <span>Cela ne coûte rien de commencer.</span>
               <p>Payfood est spécialement conçu pour l'hospitalité et soutenu par un soutien humain ultra-rapide. Et nous sommes investis à 100 % dans votre réussite.</p>
               <p>Discutons aujourd'hui et voyons comment nous pouvons aider votre entreprise à se développer.</p>
+              <button className="contact-button" onClick={() => {
+                const contactPart = document.getElementById("contact-us");
+                if (contactPart) {
+                  contactPart.scrollIntoView({ behavior: "smooth" });
+                }
+              }}>Contactez-nous</button>
             </div>
           </div>
         </section>
