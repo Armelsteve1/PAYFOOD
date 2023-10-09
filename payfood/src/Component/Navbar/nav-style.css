@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 4em;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid #0000000f;
+  position: sticky;
+  top: 0;
+}
+
+
+.navbar__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar__item {
+  margin-right: 20px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__link.contact {
+  background-color: #ff3c6e;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.navbar__link.contact:hover {
+  background: #ff245a;
+}
+
+.navbar__logo img {
+  width: 100px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
