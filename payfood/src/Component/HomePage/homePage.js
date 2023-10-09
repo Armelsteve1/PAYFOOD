@@ -27,6 +27,9 @@ import restoGrid5 from "./resto-grid5.svg";
 import restoGrid6 from "./resto-grid6.svg";
 import restoGrid7 from "./resto-grid7.svg";
 
+import restoNotes from "./resto-grid-notes.svg";
+import restoBestTitle from "./title-resto.svg";
+
 function LandingPage() {
 
   const restoPaths = [resto1, resto2, resto3, resto4, resto5, resto6, resto7, resto8, resto9, resto10, resto11, resto12, resto13];
@@ -220,10 +223,11 @@ function LandingPage() {
         </section >
         <section className="fifth">
           <div className="container">
-            <h2>Les meilleurs restaurateurs utilisent <span>Payfood</span></h2>
+            {/* <h2>Les meilleurs restaurateurs utilisent <span>Payfood</span></h2> */}
           </div >
           <div className="image-grid">
             <div className="single-image">
+              <img src={restoBestTitle} id="title-to-developed" alt=" resto-best-payfood" />
               <img src={restoGrid1} alt="resto-partenaires-1" />
             </div>
             <div className="two-images">
@@ -234,6 +238,10 @@ function LandingPage() {
               <img src={restoGrid4} alt="resto-partenaires-4" />
               <img src={restoGrid5} alt="resto-partenaires-5" />
               <img src={restoGrid6} alt="resto-partenaires-6" />
+            </div>
+            <div className="single-image">
+              <img src={restoNotes} alt="resto-notes-avis" />
+              <img src={restoGrid7} alt="resto-partenaires-7" />
             </div>
           </div>
         </section >

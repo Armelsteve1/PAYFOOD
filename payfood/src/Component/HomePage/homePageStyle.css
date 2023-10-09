@@ -11,8 +11,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 20px;
+  /* width: 100%; */
+  padding: 80px;
   min-height: 50vh;
   margin: 20px 0;
 }
@@ -554,6 +554,16 @@ span.highlighted-text {
   border-radius: 15px;
   padding: 15px 10px;
   margin: 8px;
+}
+
+.image-grid .single-image img:nth-last-child(2) {
+  border: none;
+  /* margin: 0 20px; */
+  padding: 0 150px;
+}
+
+img#title-to-developed {
+  padding: 0 50px 200px 0;
 }
 
 .six {
