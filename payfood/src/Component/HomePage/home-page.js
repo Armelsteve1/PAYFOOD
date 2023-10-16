@@ -1,5 +1,5 @@
 import React from "react";
-import "./homePageStyle.css";
+import "./home-style.css";
 import phone from "./phone-maquette.svg";
 import vector from "./icon-vector.svg";
 import logo from "./payfood-logo.svg"
