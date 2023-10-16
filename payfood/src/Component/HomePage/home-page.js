@@ -1,5 +1,5 @@
 import React from "react";
-import "./homePageStyle.css";
+import "./home-style.css";
 import phone from "./phone-maquette.svg";
 import vector from "./icon-vector.svg";
 import logo from "./payfood-logo.svg"
@@ -75,7 +75,7 @@ function LandingPage() {
                 <input type="tel" id="number" name="number" placeholder="Téléphone" required />
                 <input type="text" id="name" placeholder="Entreprise" name=" name" required />
                 <div className="button-container">
-                  <button type="submit">Submit</button>
+                  <button type="submit">Envoyez</button>
                 </div>
               </form>
             </div>
@@ -359,7 +359,7 @@ function LandingPage() {
                     contactPart.scrollIntoView({ behavior: "smooth" });
                   }
                 }}>Contactez-nous</button> */}
-                <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self">+33 6 21 29 32 33</a></p>
+                <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self">+33 6 90 29 55 63</a></p>
                 <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" target="_self">16 rue des Mimosas</a></p>
                 <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" target="_self">75015 Paris France</a></p>
               </div>
