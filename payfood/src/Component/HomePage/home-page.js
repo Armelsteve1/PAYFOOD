@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home-style.css";
 import phone from "./phone-maquette.svg";
-import vector from "./icon-vector.svg";
 import logo from "./payfood-logo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
@@ -33,6 +32,41 @@ import restoBestTitle from "./title-resto.svg";
 function LandingPage() {
 
   const restoPaths = [resto1, resto2, resto3, resto4, resto5, resto6, resto7, resto8, resto9, resto10, resto11, resto12, resto13];
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    number: '',
+    company: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch('http://localhost:4000/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          console.log('Form submitted successfully');
+        } else {
+          console.error('Form submission failed');
+        }
+      })
+      .catch((error) => {
+        console.error('Network error:', error);
+      });
+  };
+
 
   return (
     <div className="landing-page">
@@ -69,11 +103,39 @@ function LandingPage() {
               <p>Vous recevrez une réponse dans les 24 heures. Nous vous expliquerons en détail comment nous pouvons vous aider à alimenter et à développer votre marque dans le cadre du budget indiqué.</p>
             </div>
             <div className="right">
-              <form className="contact-form">
-                <input type="text" id="name" placeholder="Nom et prénom" name=" name" required />
-                <input type="email" id="email" name="email" placeholder="Email" required />
-                <input type="tel" id="number" name="number" placeholder="Téléphone" required />
-                <input type="text" id="name" placeholder="Entreprise" name=" name" required />
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nom et prénom"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="tel"
+                  name="number"
+                  placeholder="Téléphone"
+                  value={formData.number}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Entreprise"
+                  value={formData.company}
+                  onChange={handleChange}
+                  required
+                />
                 <div className="button-container">
                   <button type="submit">Envoyez</button>
                 </div>
