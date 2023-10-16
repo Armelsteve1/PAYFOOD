@@ -54,3 +54,14 @@
   background-color: black;
   margin: 3px 0;
 }
+
+/* Media query for tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {}

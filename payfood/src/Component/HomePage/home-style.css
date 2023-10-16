@@ -24,6 +24,34 @@
   color: #34373E;
 }
 
+/* Media query for tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .content {
+    width: auto;
+    font-family: 'Montserat', sans-serif;
+  }
+
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .content {
+    width: auto;
+    font-family: 'Montserat', sans-serif;
+  }
+}
+
+
+
 .slogan-landing {
   font-weight: bolder;
   line-height: 1.5;
