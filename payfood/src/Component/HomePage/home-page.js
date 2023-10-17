@@ -35,7 +35,7 @@ function LandingPage() {
 
   const gaEventTracker = useAnalyticsEventTracker('Contact us');
 
-  const restoPaths = [resto1, resto2, resto3, resto4, resto5, resto6, resto7, resto8, resto9, resto10, resto11, resto12, resto13];
+  const restoPaths = [resto1, resto2, resto3, resto4, resto5, resto6, resto7, resto8, resto9, resto10, resto11, resto12];
 
   const [formData, setFormData] = useState({
     name: '',
@@ -352,14 +352,10 @@ function LandingPage() {
               <div className="footer-menu">
                 <h2 className="footer-menu-name">A propos</h2>
                 <ul id="menu-get-started" className="footer-menu-list">
-                  {/* <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                    <a href="#about-us">A propos</a>
-                  </li> */}
                   <li className="menu-item menu-item-type-post_type menu-item-object-product">
                     <a href="#about-us">Blog</a>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                    {/* <a href="#">Blabla</a> */}
                   </li>
                 </ul>
               </div>
@@ -368,9 +364,6 @@ function LandingPage() {
               <div className="footer-menu">
                 <h2 className="footer-menu-name">Comment ça marche ?</h2>
                 <ul id="menu-company" className="footer-menu-list">
-                  {/* <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="#">Comment ça marche ?</a>
-                  </li> */}
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
                     <a href="#">Pour les restaurateurs</a>
                   </li>
@@ -391,40 +384,9 @@ function LandingPage() {
                 </ul>
               </div>
             </div>
-            {/* <div className="footer-content-column">
-              <div className="footer-menu">
-                <h2 className="footer-menu-name"> Quick Links</h2>
-                <ul id="menu-quick-links" className="footer-menu-list">
-                  <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
-                  </li>
-                  <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
-                  </li>
-                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="#">Security</a>
-                  </li>
-                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="#">Blog</a>
-                  </li>
-                  <li className="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                    <a href="#">Customers</a></li>
-                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="#">Reviews</a>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
             <div className="footer-content-column">
               <div className="footer-call-to-action">
                 <h2 className="footer-call-to-action-title">Rejoignez-nous !</h2>
-                {/* <p className="footer-call-to-action-description">Vous avez une question ?</p> */}
-                {/* <button className="contact-button" onClick={() => {
-                  const contactPart = document.getElementById("contact-us");
-                  if (contactPart) {
-                    contactPart.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}>Contactez-nous</button> */}
                 <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self">+33 6 90 29 55 63</a></p>
                 <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" target="_self">16 rue des Mimosas</a></p>
                 <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" target="_self">75015 Paris France</a></p>
@@ -460,7 +422,7 @@ function LandingPage() {
             </div>
           </div>
         </footer>
-      </div>
+      </div >
     </div >
   );
 }
