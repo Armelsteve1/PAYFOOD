@@ -355,13 +355,6 @@ span.highlighted-text {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .fourth .container {
-    width: 80%;
-    /* Adjust the width for smaller screens */
-  }
-}
-
 .fourth .item1 {
   background-image: url('./item1.svg');
   background-repeat: no-repeat;
@@ -498,11 +491,6 @@ span.highlighted-text {
 }
 
 .image-grid {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center; */
   text-align: right;
   display: inline-grid;
   flex-wrap: wrap;
@@ -551,6 +539,47 @@ img#title-to-developed {
   border-radius: 0;
 }
 
+.six {
+  background: linear-gradient(180deg, rgba(231, 27, 106, 1) 0%, #EA4A6B 100%);
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  padding: 60px 0;
+}
+
+.six p {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.six span {
+  font-size: 3em;
+}
+
+.seven {
+  background-color: #000000;
+  padding: 60px 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.seven p {
+  text-align: justify;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.seven span:first-child {
+  font-size: 2.6em;
+  line-height: 1.5em;
+}
+
+.seven .container {
+  text-align: unset;
+}
 
 /* Media query for tablets (up to 768px) */
 @media screen and (max-width: 768px) {
@@ -598,6 +627,22 @@ img#title-to-developed {
 
   .image-grid .single-image img:nth-last-child(2) {
     padding: 0;
+  }
+
+  .six p {
+    font-size: 18px;
+  }
+
+  .six span {
+    font-size: 2.5em;
+  }
+
+  .seven p {
+    font-size: 16px;
+  }
+
+  .seven span:first-child {
+    font-size: 2.2em;
   }
 
 }
@@ -734,46 +779,21 @@ img#title-to-developed {
     padding: 0 25px 100px 0;
   }
 
-}
+  .six p {
+    font-size: 16px;
+  }
 
-.six {
-  background: linear-gradient(180deg, rgba(231, 27, 106, 1) 0%, #EA4A6B 100%);
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
-  padding: 60px 0;
-}
+  .six span {
+    font-size: 2em;
+  }
 
-.six p {
-  font-size: 20px;
-  text-align: justify;
-}
+  .seven p {
+    font-size: 14px;
+  }
 
-.six span {
-  font-size: 3em;
-}
-
-.seven {
-  background-color: #000000;
-  padding: 60px 0;
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-}
-
-.seven p {
-  text-align: justify;
-  font-size: 18px;
-}
-
-.seven span:first-child {
-  font-size: 2.6em;
-  line-height: 1.5em;
-}
-
-.seven .container {
-  text-align: unset;
+  .seven span:first-child {
+    font-size: 1.9em;
+  }
 }
 
 * {
