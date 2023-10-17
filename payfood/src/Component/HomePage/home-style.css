@@ -1,5 +1,4 @@
 .landing-page {
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   background: #ffffff;
@@ -23,34 +22,6 @@
   font-family: 'Montserat', sans-serif;
   color: #34373E;
 }
-
-/* Media query for tablets (up to 768px) */
-@media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 40px;
-  }
-
-  .content {
-    width: auto;
-    font-family: 'Montserat', sans-serif;
-  }
-
-}
-
-/* Media query for mobile devices (up to 480px) */
-@media screen and (max-width: 480px) {
-  .hero {
-    padding: 20px;
-  }
-
-  .content {
-    width: auto;
-    font-family: 'Montserat', sans-serif;
-  }
-}
-
-
 
 .slogan-landing {
   font-weight: bolder;
@@ -102,17 +73,6 @@
   max-width: 100%;
   height: auto;
 }
-
-/* @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .phone {
-    margin-top: 20px;
-  }
-} */
 
 .deuxieme {
   background-color: black;
@@ -279,6 +239,7 @@ span.highlighted-text {
 
 .container.with-quote p {
   color: white;
+  margin: 10px 0;
 }
 
 .container.with-quote span {
@@ -291,6 +252,116 @@ span.highlighted-text {
 .container.with-quote span:nth-child(5) {
   color: #ff3c6e;
   margin: inherit;
+}
+
+
+
+/* Media query for tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .content {
+    width: auto;
+    font-family: 'Montserat', sans-serif;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .third .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .third .section-header {
+    margin: 40px 0 10px;
+  }
+
+  .third .section-title {
+    font-size: 2.5em;
+  }
+
+  .third .section-description {
+    font-size: 16px;
+  }
+
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .content {
+    width: auto;
+    font-family: 'Montserat', sans-serif;
+  }
+
+  .deuxieme {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+
+  .left {
+    padding: 0;
+  }
+
+  .left span,
+  .all-in span {
+    font-size: 1.5rem;
+  }
+
+  .left span:nth-last-child(2) {
+    margin: 0 0 10px;
+  }
+
+  .left p,
+  .all-in p,
+  .right p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .right .contact-form {
+    align-items: center;
+  }
+
+  .button-container {
+    margin-top: 10px;
+    align-self: center;
+  }
+
+  .additional-div {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .quote-saying {
+    padding: 10px;
+  }
+
+  .quote-icon {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container.with-quote span {
+    margin-bottom: 0;
+  }
+
+  .container.with-quote span:nth-child(4) {
+    color: #ff3c6e;
+    margin: 10px 0 0;
+  }
 }
 
 .third .section-header {
