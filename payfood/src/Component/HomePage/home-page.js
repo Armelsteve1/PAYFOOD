@@ -29,14 +29,12 @@ import restoGrid7 from "./resto-grid7.svg";
 import restoNotes from "./resto-grid-notes.svg";
 import restoBestTitle from "./title-resto.svg";
 
-// import useAnalyticsEventTracker from './../../useAnalyticsEventTracker';
+import ReactGA from './../../analytics';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 function LandingPage() {
-
-  // const gaEventTracker = useAnalyticsEventTracker('Contact us');
 
   const restoPaths = [resto1, resto2, resto3, resto4, resto5, resto6, resto7, resto8, resto9, resto10, resto11, resto12];
 
@@ -56,7 +54,7 @@ function LandingPage() {
     e.preventDefault();
 
     //need to change url when starting ngrok
-    fetch('https://2ab1-2001-861-3005-f4c0-2cb5-969b-4881-7295.ngrok-free.app/submit', {
+    fetch('http://localhost:4000/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -84,8 +82,15 @@ function LandingPage() {
           position: toast.POSITION.TOP_RIGHT,
         });
       });
+
+    ReactGA.event({
+      category: 'Contact Form',
+      action: 'Submit',
+    });
+    console.log('Event sent');
   };
 
+  ReactGA.pageview("/#contact-us" + window.location.search);
 
   return (
     <div className="landing-page">
@@ -197,27 +202,27 @@ function LandingPage() {
               </div>
               <div className="grid-container">
                 <div className="grid-item">
-                  <h3><icon>&gt;</icon> 8x</h3>
+                  <h3>&gt; 8x</h3>
                   <p>augmentation des dépenses mensuelles des clients</p>
                 </div>
                 <div className="grid-item">
-                  <h3><icon>&gt;</icon> 10x</h3>
+                  <h3>&gt; 10x</h3>
                   <p>des données clients exploitables</p>
                 </div>
                 <div className="grid-item">
-                  <h3><icon>&gt;</icon> 80%</h3>
+                  <h3>&gt; 80%</h3>
                   <p>augmentation du coût moyenne d'une commande</p>
                 </div>
                 <div className="grid-item">
-                  <h3><icon>&gt;</icon> 250%</h3>
+                  <h3>&gt; 250%</h3>
                   <p>taux de rétention et de visites de retour</p>
                 </div>
                 <div className="grid-item">
-                  <h3><icon>&gt;</icon> 14m</h3>
+                  <h3>&gt; 14m</h3>
                   <p>temps gagné par serveur par table</p>
                 </div>
                 <div className="grid-item">
-                  <h3><icon>&gt;</icon> 65%</h3>
+                  <h3>&gt; 65%</h3>
                   <p>Deviennent super fans</p>
                 </div>
               </div>
@@ -441,7 +446,7 @@ function LandingPage() {
           </footer>
         </div >
         <ToastContainer />
-      </div>
+      </div >
     </div >
   );
 }
