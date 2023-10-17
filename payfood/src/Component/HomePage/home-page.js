@@ -29,11 +29,14 @@ import restoGrid7 from "./resto-grid7.svg";
 import restoNotes from "./resto-grid-notes.svg";
 import restoBestTitle from "./title-resto.svg";
 
-import useAnalyticsEventTracker from './../../useAnalyticsEventTracker';
+// import useAnalyticsEventTracker from './../../useAnalyticsEventTracker';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function LandingPage() {
 
-  const gaEventTracker = useAnalyticsEventTracker('Contact us');
+  // const gaEventTracker = useAnalyticsEventTracker('Contact us');
 
   const restoPaths = [resto1, resto2, resto3, resto4, resto5, resto6, resto7, resto8, resto9, resto10, resto11, resto12];
 
@@ -60,17 +63,27 @@ function LandingPage() {
       body: JSON.stringify(formData),
     })
       .then((response) => {
-        if (response.ok) {
-          console.log('Form submitted successfully');
+        if (response.status === 200) {
+          toast.success('Form submitted successfully', {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+          console.log("Form submission success!!", response.status)
+          setFormData({
+            name: '',
+            email: '',
+            number: '',
+            company: '',
+          });
         } else {
-          console.error('Form submission failed');
+          toast.error('Form submission failed', {
+            position: toast.POSITION.TOP_RIGHT,
+          });
         }
       })
       .catch((error) => {
         console.error('Network error:', error);
       });
   };
-
 
   return (
     <div className="landing-page">
@@ -141,7 +154,8 @@ function LandingPage() {
                   required
                 />
                 <div className="button-container">
-                  <button type="submit" onClick={() => gaEventTracker('form')}>Envoyez</button>
+                  {/* <button type="submit" onClick={() => gaEventTracker('form')}>Envoyez</button> */}
+                  <button type="submit">Envoyez</button>
                 </div>
               </form>
             </div>
