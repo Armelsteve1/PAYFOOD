@@ -170,7 +170,6 @@
   border: none;
   border-radius: 8px;
   background: rgba(255, 60, 110, 0.17);
-  text-transform: uppercase;
   font-family: Montserat, sans-serif;
   display: flex;
   flex-direction: column;
@@ -180,6 +179,7 @@
 
 .right input::placeholder {
   color: white;
+  text-transform: uppercase
 }
 
 .right button {
@@ -1011,7 +1011,7 @@ footer {
   }
 
   img#title-to-developed {
-    padding: 0 25px 100px 0;
+    padding: 0 25px 70px 0;
   }
 
   .six p {

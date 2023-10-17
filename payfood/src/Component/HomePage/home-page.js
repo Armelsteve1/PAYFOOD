@@ -55,7 +55,8 @@ function LandingPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:4000/submit', {
+    //need to change url when starting ngrok
+    fetch('https://2ab1-2001-861-3005-f4c0-2cb5-969b-4881-7295.ngrok-free.app/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
