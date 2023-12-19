@@ -1,6 +1,6 @@
 import './App.css';
 import LandingPage from './Component/HomePage/home-page';
-import NavigationBar from './Component/Navbar/navbar';
+import NavigationBar from './Component/Navbar/Navbar';
 
 // import ReactGA from 'react-ga';
 // const TRACKING_ID = "411751010";
