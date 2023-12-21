@@ -3,7 +3,7 @@ import "./home-style.css";
 import phone from "./phone-maquette.svg";
 import logo from "./payfood-logo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faVectorSquare } from "@fortawesome/free-solid-svg-icons";
 import resto1 from "./resto1.svg";
 import resto2 from "./resto2.svg";
 import resto3 from "./resto3.svg";
@@ -33,6 +33,7 @@ import ReactGA from './../../analytics';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import foodGif from "./food-gif.svg";
 
 function LandingPage() {
 
@@ -98,16 +99,14 @@ function LandingPage() {
         <main className="contenaire">
           <section className="hero">
             <div className="content">
-              <div className="slogan-landing">
-                <p>Ne vous préoccupez plus de l’addition.</p>
-              </div>
               <div className="decouvert">
-                <p>Découvrez</p>
-                <p> Payfood</p>
+                <p>Ne vous</p>
+                <p>préoccupez plus</p>
+                <p>de <span>l'addition</span>.</p>
               </div>
               <div className="text">
                 <p>
-                  Chez PayFood, nous accompagnons les restaurateurs les plus talentueux d'île de France. Nous avons créé la plateforme d'engagement ultime pour les restaurants, les hôtels, les bars, les salles de réception et les événements.
+                  Maîtrisez la façon dont les clients paient et restent fidèles à votre restaurant.
                 </p>
               </div>
               <button className="contact-button" onClick={() => {
@@ -115,7 +114,10 @@ function LandingPage() {
                 if (contactPart) {
                   contactPart.scrollIntoView({ behavior: "smooth" });
                 }
-              }}>Contactez-nous</button>
+              }}>Découvrez notre offre</button>
+              <div className="slogan-landing">
+                <p>Sans engagement. Essai gratuit pendant 2 mois.</p>
+              </div>
             </div>
             <img className="phone" src={phone} alt="Phone" />
           </section>
@@ -169,7 +171,7 @@ function LandingPage() {
               </div>
             </div>
           </section>
-          <section className="deuxieme">
+          <section className="deuxieme colored">
             <div className="container">
               <div className="all-in">
                 <span>L'ingrédient dont <span className="highlighted-text">tous</span> les restaurants</span>
@@ -178,7 +180,7 @@ function LandingPage() {
               </div>
             </div>
           </section>
-          <section className="deuxieme">
+          <section className="deuxieme colored">
             <div className="container with-quote">
               <div className="left">
                 <p>Nous apportons un soutien aux meilleurs opérateurs en les aidant à prendre le contrôle de leurs clients, de leurs données et de leurs finances.</p>
@@ -198,33 +200,33 @@ function LandingPage() {
             <div className="container">
               <div className="section-header">
                 <span className="section-title">Goûte ça !</span>
-                <span className="section-description">Avec Payfood, vous pourriez...</span>
+                <span className="section-description">Avec Payfood, vous pourriez réaliser ceci</span>
               </div>
               <div className="grid-container">
-                <div className="grid-item">
-                  <h3>&gt; 8x</h3>
-                  <p>augmentation des dépenses mensuelles des clients</p>
-                </div>
-                <div className="grid-item">
-                  <h3>&gt; 10x</h3>
-                  <p>des données clients exploitables</p>
-                </div>
-                <div className="grid-item">
-                  <h3>&gt; 80%</h3>
-                  <p>augmentation du coût moyenne d'une commande</p>
-                </div>
-                <div className="grid-item">
-                  <h3>&gt; 250%</h3>
-                  <p>taux de rétention et de visites de retour</p>
-                </div>
                 <div className="grid-item">
                   <h3>&gt; 14m</h3>
                   <p>temps gagné par serveur par table</p>
                 </div>
                 <div className="grid-item">
-                  <h3>&gt; 65%</h3>
-                  <p>Deviennent super fans</p>
+                  <h3>&gt; 80%</h3>
+                  <p>augmentation du coût moyen d'une commande</p>
                 </div>
+                <div className="grid-item">
+                  <h3>&gt; 100%</h3>
+                  <p>des données clients exploitables</p>
+                </div>
+                <div className="grid-item">
+                  <h3>&gt; 250%</h3>
+                  <p>taux de rétention et de visites de retour</p>
+                </div>
+                {/* <div className="grid-item">
+                  <h3>&gt; 14m</h3>
+                  <p>temps gagné par serveur par table</p>
+                </div>
+                <div className="grid-item">
+                  <h3>&gt; 65%</h3>
+                  <p>Deviennent super fans</p> */}
+                {/* </div> */}
               </div>
             </div>
           </section>
@@ -234,32 +236,32 @@ function LandingPage() {
               <div className="grid-container">
                 <div className="grid-row">
                   <div className="grid-item item1">
-                    <h3>Alimentez votre entreprise en créant votre propre devise.</h3>
-                    <p>Nous avons créer un puissant système de fidélité prépayé pour débloquer une incroyable puissance de marketing et de financement.</p>
+                    <h3>Créez votre propre devise</h3>
+                    <p>Un système de points de fidélité qui transforme chaque achat en récompense.</p>
                   </div>
                   <div className="grid-item item2">
-                    <h3>Construisez votre marque !</h3>
-                    <p>Le puissant portefeuille marketing de Payfood vous permet de créer, cibler et interagir avec des fans et votre communauté de marque. Nourrissez et récompensez les gourmets qui comptent le plus. Au lieu que Google, Instagram et d'autres accèdent à votre portefeuille, accédez au portefeuille de vos clients et fidélisez-les dès aujourd'hui.</p>
+                    <h3>Concentrez-vous sur la cuisine, nous vous amenons les clients</h3>
+                    <p>Chacun son métier... nous nous chargeons de mettre à votre disposition un vaste réseau de clients potentiels</p>
                   </div>
                 </div>
                 <div className="grid-row">
                   <div className="grid-item item3">
                     <h3>Payer, gagner, savourer :</h3>
-                    <p>Payfood vous propose bien plus qu'un simple moyen de paiement. Chaque repas devient une occasion de gagner et de savourer. Laissez-vous surprendre par des recommandations personnalisées. </p>
+                    <p>Chaque repas devient une occasion pour votre client de gagner et de savourer. Surprenez-les avec des recommandations personnalisées.</p>
                   </div>
                   <div className="grid-item item4">
                     <h3>Datalicieux.</h3>
-                    <p>Possédez vos données et utilisez-les comme vous le souhaitez</p>
+                    <p>Appropriez-vous vos données et personnalisez l'expérience client pour renforcer l'engagement.</p>
                   </div>
                 </div>
                 <div className="grid-row">
                   <div className="grid-item item5">
                     <h3>Impactez chaque client.</h3>
-                    <p>Augmentez le nombre de visiteurs et le volume des commandes grâce aux codes QR intelligents et au moteur de fidélisation de Payfood. Impactez-les aujourd'hui pour que chaque visite soit plus intéressante demain.</p>
+                    <p>Augmentez le nombre de visites et le volume des commandes grâce aux QR codes intelligents et au système de fidélisation de Payfood.</p>
                   </div>
                   <div className="grid-item item6">
                     <h3>Tous les ingrédients pour assurer votre croissance</h3>
-                    <p>Avec Payfood, vous bénéficiez d'une visibilité accrue auprès d'une base d'utilisateurs croissante. Nous vous connectons avec une communauté d'utilisateurs avides de nouvelles expériences culinaires. Vous aurez l'opportunité de toucher de nouveaux clients et d'accroître votre visibilité, vous permettant ainsi d'attirer davantage de personnes vers votre établissement.</p>
+                    <p>Attirez plus de clients et élargissez votre présence grâce à notre communauté d'utilisateurs avides de nouvelles expériences culinaires.</p>
                   </div>
                 </div>
               </div>
@@ -271,17 +273,17 @@ function LandingPage() {
                 <span>Gusto,</span>
                 <span>ajoutez de la magie à l’expérience</span>
                 <span>Votre monnaie virtuelle</span>
-                <p>L'ingrédient secret qui fait la différence. Vous possédez et créez votre propre monnaie virtuelle !</p>
+                <p>Transformez vos clients occasionnels en véritables ambassadeurs de votre marque.</p>
                 <div className="table-without-table">
                   <div className="icon-and-text">
-                    <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-                    <p>Payfood vous propose bien plus qu'un simple moyen de paiement.</p>
+                    <FontAwesomeIcon icon={faVectorSquare} className="task-done-icon" />
+                    <p>À chaque fois qu'un client passe commande ou visite votre établissement, il accumule de la monnaie virtuelle, une sorte de points de fidélité modernes, qu'il peut ensuite utiliser pour obtenir des récompenses, des remises ou des offres exclusives. Cela vous permet de récompenser la fidélité de vos clients tout en les encourageant à revenir ! </p>
                   </div>
                   <div className="icon-and-text">
-                    <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
-                    <p>Chaque repas devient une opportunité de gagner et de savourer.</p>
+                    <FontAwesomeIcon icon={faVectorSquare} className="task-done-icon" />
+                    <p>Chaque repas devient une opportunité de “gagner et de savourer”</p>
                   </div>
-                  <div className="icon-and-text">
+                  {/* <div className="icon-and-text">
                     <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
                     <p>Laissez-vous surprendre par des recommandations personnalisées.</p>
                   </div>
@@ -292,7 +294,7 @@ function LandingPage() {
                   <div className="icon-and-text">
                     <FontAwesomeIcon icon={faSquareCheck} className="task-done-icon" />
                     <p>Votre propre monnaie virtuelle.</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -319,6 +321,7 @@ function LandingPage() {
                 <img src={restoGrid1} alt="resto-partenaires-1" />
               </div>
               <div className="two-images">
+                <img src={restoNotes} alt="resto-notes-avis" />
                 <img src={restoGrid2} alt="resto-partenaires-2" />
                 <img src={restoGrid3} alt="resto-partenaires-3" />
               </div>
@@ -327,17 +330,20 @@ function LandingPage() {
                 <img src={restoGrid5} alt="resto-partenaires-5" />
                 <img src={restoGrid6} alt="resto-partenaires-6" />
               </div>
-              <div className="single-image">
+              {/* <div className="single-image">
                 <img src={restoNotes} alt="resto-notes-avis" />
                 <img src={restoGrid7} alt="resto-partenaires-7" />
-              </div>
+              </div> */}
             </div>
           </section >
           <section className="six">
             <div className="container">
               <div className="all-in linear">
                 <span>La recette parfaite</span>
-                <p>Nous nous connectons à tous les ingrédients dont vous avez besoin pour grandir. Des centaines d'intégrations et bien d'autres à venir.</p>
+                <p>Nous vous procurons tous les ingrédients dont vous avez besoin pour grandir.</p>
+              </div>
+              <div className="all-in linear">
+                <img src={foodGif} alt="food gif moving" />
               </div>
             </div>
           </section>
@@ -346,7 +352,7 @@ function LandingPage() {
               <div className="all-in black">
                 <span>Envie de goûter ?</span>
                 <span>Cela ne coûte rien de commencer.</span>
-                <p>Payfood est spécialement conçu pour l'hospitalité et soutenu par un soutien humain ultra-rapide. Et nous sommes investis à 100 % dans votre réussite.</p>
+                <p>Payfood est une solution taillée sur mesure pour le secteur de l'hôtellerie-restauration, appuyée par une assistance rapide et personnalisée.</p>
                 <p>Discutons aujourd'hui et voyons comment nous pouvons aider votre entreprise à se développer.</p>
                 <button className="contact-button" onClick={() => {
                   const contactPart = document.getElementById("contact-us");

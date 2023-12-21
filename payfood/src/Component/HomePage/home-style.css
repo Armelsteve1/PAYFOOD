@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   /* width: 100%; */
-  padding: 80px;
+  padding: 60px;
   min-height: 50vh;
   margin: 20px 0;
 }
@@ -31,7 +31,7 @@
 .slogan-landing {
   font-weight: bolder;
   line-height: 1.5;
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 
 .decouvert {
@@ -45,7 +45,7 @@
   margin: 0;
 }
 
-.decouvert p:last-child {
+.decouvert span:last-child {
   margin: 0 0 20px;
   color: #FF3C6E;
 }
@@ -56,10 +56,11 @@
   line-height: 1.25;
   text-align: justify;
   color: #000000;
+  margin: 30px 0 15px;
 }
 
 .contact-button {
-  background-color: #ff3c6e;
+  background-color: #E71C6B;
   color: white;
   padding: 10px 16px;
   border-radius: 8px;
@@ -169,7 +170,7 @@
   margin-bottom: 20px;
   border: none;
   border-radius: 8px;
-  background: rgba(255, 60, 110, 0.17);
+  background: #FBFBFB;
   font-family: Montserat, sans-serif;
   display: flex;
   flex-direction: column;
@@ -178,12 +179,12 @@
 }
 
 .right input::placeholder {
-  color: white;
+  color: rgb(176, 173, 173);
   text-transform: uppercase
 }
 
 .right button {
-  background-color: #ff3c6e;
+  background-color: #E71C6B;
   color: white;
   padding: 6px 30px;
   border: none;
@@ -207,6 +208,10 @@
   padding: 10px;
   text-align: center;
   margin-top: 20px;
+}
+
+.colored {
+  background: #02C2B3;
 }
 
 span.highlighted-text {
@@ -283,7 +288,7 @@ span.highlighted-text {
 
 .third .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
   color: white;
@@ -293,9 +298,18 @@ span.highlighted-text {
 
 .third .grid-item {
   background-color: #000000;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 10px;
 }
+
+.third .grid-item:nth-child(1) {
+  background-color: #E71C6B;
+}
+
+.third .grid-item:nth-child(3) {
+  background-color: #E71C6B;
+}
+
 
 .third .grid-item h3 {
   font-weight: bolder;
@@ -352,7 +366,7 @@ span.highlighted-text {
 
 .fourth .grid-item {
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 45%;
   margin: 10px;
   display: flex;
@@ -426,7 +440,7 @@ span.highlighted-text {
 .fourth .container .table-without-table p {
   font-size: 12px;
   padding: 10px 0;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   justify-content: start;
   align-items: center;
@@ -523,10 +537,15 @@ span.highlighted-text {
 
 .image-grid img {
   border: 0.8px solid rgb(255, 94, 134);
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 8px;
   width: 250px;
   height: auto;
+  padding: 12px;
+}
+
+.two-images img:nth-last-child() {
+  border: 0.8px solid rgb(94, 97, 255);
 }
 
 .image-grid .single-image img:nth-last-child(2) {
@@ -535,12 +554,14 @@ span.highlighted-text {
 }
 
 img#title-to-developed {
-  padding: 0 50px 200px 0;
+  padding: 0 50px 150px 0;
   border-radius: 0;
+  width: 450px;
 }
 
 .six {
-  background: linear-gradient(180deg, rgba(231, 27, 106, 1) 0%, #EA4A6B 100%);
+  /* background: linear-gradient(180deg, rgba(231, 27, 106, 1) 0%, #EA4A6B 100%); */
+  background: #FFC750;
   font-family: Poppins, sans-serif;
   font-weight: 400;
   padding: 60px 0;
@@ -550,10 +571,12 @@ img#title-to-developed {
   font-size: 20px;
   text-align: justify;
   margin: 20px 0;
+  color: #1E2024;
 }
 
 .six span {
   font-size: 3em;
+  color: #1E2024;
 }
 
 .seven {
