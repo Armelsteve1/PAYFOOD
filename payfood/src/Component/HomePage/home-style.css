@@ -36,7 +36,7 @@
 
 .decouvert {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 4rem;
   color: #34373E;
 }
@@ -114,8 +114,8 @@
 
 .left span {
   display: block;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 0.8rem;
   color: white;
   margin: 5px 0;
   font-family: Montserrat, sans-serif;
@@ -126,7 +126,7 @@
   display: block;
   font-weight: 600;
   font-size: 2rem;
-  color: white;
+  color: black;
   margin: 5px 0;
   font-family: Montserrat, sans-serif;
   text-align: start;
@@ -214,11 +214,6 @@
   background: #02C2B3;
 }
 
-span.highlighted-text {
-  color: #ff245a;
-  text-decoration: underline;
-}
-
 .right p {
   color: white;
   font-family: Montesrat, sans-serif;
@@ -248,20 +243,24 @@ span.highlighted-text {
 }
 
 .container.with-quote p {
-  color: white;
+  color: black;
   margin: 10px 0;
 }
 
 .container.with-quote span {
   display: block;
-  color: white;
   margin-bottom: 20px;
 }
 
 .container.with-quote span:nth-child(4),
 .container.with-quote span:nth-child(5) {
-  color: #ff3c6e;
+  color: #E71C6B;
   margin: inherit;
+}
+
+span.highlighted-text {
+  color: #E71C6B;
+  text-decoration: underline;
 }
 
 .third .section-header {
