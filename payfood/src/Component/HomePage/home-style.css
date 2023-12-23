@@ -122,6 +122,10 @@
   text-align: start;
 }
 
+#contact-us span {
+  font-size: 2rem;
+}
+
 .all-in span {
   display: block;
   font-weight: 600;
@@ -340,7 +344,7 @@ span.highlighted-text {
 }
 
 .fourth h2 {
-  font-size: 4.3em;
+  font-size: 3em;
   font-weight: bold;
   font-family: Poppins, sans-serif;
   margin: 40px 0 20px;
@@ -367,6 +371,7 @@ span.highlighted-text {
   padding: 20px;
   border-radius: 10px;
   width: 45%;
+  height: 250px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -535,7 +540,7 @@ span.highlighted-text {
 }
 
 .image-grid img {
-  border: 0.8px solid rgb(255, 94, 134);
+  /* border: 0.8px solid rgb(255, 94, 134); */
   border-radius: 10px;
   margin: 8px;
   width: 250px;
