@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './nav-style.css';
-import logo from './payfood-logo.svg';
+import logo from './logo-payfood.svg';
 
 function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,10 +21,10 @@ function NavigationBar() {
       </div>
       <ul className="navbar__list">
         <li className="navbar__item">
-          <a href="#about-us" className="navbar__link">Blog</a>
+          <a href="#restaurants-partenaires" className="navbar__link">Espace restaurateurs</a>
         </li>
         <li className="navbar__item">
-          <a href="#restaurants-partenaires" className="navbar__link">Restaurants partenaires</a>
+          <a href="#about-us" className="navbar__link">Blog</a>
         </li>
         <li className="navbar__item">
           <a href="#contact-us" className="navbar__link contact">Contact</a>

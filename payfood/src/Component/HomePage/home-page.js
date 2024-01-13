@@ -127,7 +127,7 @@ function LandingPage() {
                 <span>Rejoignez</span>
                 <span>l'expérience</span>
                 <span>Payfood</span>
-                <p>Vous recevrez une réponse dans les 24 heures. Nous vous expliquerons en détail comment nous pouvons vous aider à alimenter et à développer votre marque dans le cadre du budget indiqué.</p>
+                <p>Découvrez l'interface Payfood et toutes ses fonctionnalités. <br></br>Renseignez vos coordonnées pour être rappelé(e) rapidement et organiser une démo.</p>
               </div>
               <div className="right">
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -165,7 +165,7 @@ function LandingPage() {
                   />
                   <div className="button-container">
                     {/* <button type="submit" onClick={() => gaEventTracker('form')}>Envoyez</button> */}
-                    <button type="submit">Envoyez</button>
+                    <button type="submit">Envoyer</button>
                   </div>
                 </form>
               </div>
@@ -440,7 +440,7 @@ function LandingPage() {
             <div className="footer-copyright">
               <div className="footer-copyright-wrapper">
                 <p className="footer-copyright-text">
-                  <a className="footer-copyright-link" href="#" target="_self"> ©2024. | Payfood@Marci. | Tous droits réservés. </a>
+                  <a className="footer-copyright-link" href="#" target="_self"> © 2024 | Payfood@Marci. | Tous droits réservés. </a>
                 </p>
               </div>
             </div>

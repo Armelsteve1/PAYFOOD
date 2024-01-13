@@ -24,18 +24,18 @@
 .content {
   width: 50%;
   padding: 20px;
-  font-family: 'Montserat', sans-serif;
-  color: #34373E;
+  font-family: 'Poppins', sans-serif;
+  color: #34373eb8;
 }
 
 .slogan-landing {
-  font-weight: bolder;
+  font-weight: 1200;
   line-height: 1.5;
   margin: 15px 0px;
 }
 
 .decouvert {
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 3rem;
   line-height: 4rem;
   color: #34373E;
@@ -55,15 +55,15 @@
   font-size: 1rem;
   line-height: 1.25;
   text-align: justify;
-  color: #000000;
+  color: #34373eb8;
   margin: 30px 0 15px;
 }
 
 .contact-button {
   background-color: #E71C6B;
   color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
+  padding: 12px 16px;
+  border-radius: 13px;
   border: none;
   font-family: "Gill Sans", sans-serif;
   font-size: 18px;
@@ -230,7 +230,7 @@
 }
 
 .quote-saying {
-  border: 1px solid #ff3c6e;
+  border: 1px solid CCCCCC;
   padding: 20px;
   border-radius: 8px;
 }
@@ -848,7 +848,7 @@ footer {
 
   .content {
     width: auto;
-    font-family: 'Montserat', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .container {
@@ -917,7 +917,7 @@ footer {
 
   .content {
     width: auto;
-    font-family: 'Montserat', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .deuxieme {
