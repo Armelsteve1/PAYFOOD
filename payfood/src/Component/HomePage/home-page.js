@@ -440,7 +440,7 @@ function LandingPage() {
             <div className="footer-copyright">
               <div className="footer-copyright-wrapper">
                 <p className="footer-copyright-text">
-                  <a className="footer-copyright-link" href="#" target="_self"> ©2024. | Payfood@Marci. | Tous droits réservés. </a>
+                  <a className="footer-copyright-link" href="#" target="_self"> ©2025. | Payfood@Marci. | Tous droits réservés. </a>
                 </p>
               </div>
             </div>
