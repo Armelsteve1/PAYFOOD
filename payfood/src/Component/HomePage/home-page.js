@@ -294,7 +294,7 @@ function LandingPage() {
               </div>
             </div>
           </section >
-          <section className="fifth" id="restaurants-partenaires">
+          {/* <section className="fifth" id="restaurants-partenaires">
             <div className="container">
               <h2>Découvrez l'ingrédient secret utilisé par<span> xxx, xxx, et xxxx</span> - et apprécié par plus de 500 établissements, dont le nombre augmente de jour en jour.</h2>
               <div className="grid-container">
@@ -305,7 +305,7 @@ function LandingPage() {
                 ))}
               </div >
             </div >
-          </section >
+          </section > */}
           <section className="fifth">
             <div className="container">
               {/* <h2>Les meilleurs restaurateurs utilisent <span>Payfood</span></h2> */}
