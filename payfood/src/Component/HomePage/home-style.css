@@ -71,6 +71,11 @@
   cursor: pointer;
 }
 
+.all-in-black button {
+  margin: unset;
+}
+
+
 .contact-button:hover {
   background: #ff245a;
 }
@@ -92,11 +97,13 @@
 
 .container {
   display: flex;
+  /* 
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: auto;
-  width: 50%;
+  text-align: center; */
+  padding: 10px 65px;
+  margin: 20px 0;
+  width: 30%;
 }
 
 .left {
@@ -118,7 +125,7 @@
   font-size: 0.8rem;
   color: white;
   margin: 5px 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: start;
 }
 
@@ -132,8 +139,12 @@
   font-size: 2rem;
   color: black;
   margin: 5px 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: start;
+}
+
+.all-in-black {
+  color: #FBFBFB;
 }
 
 .left span:nth-last-child(2) {
@@ -143,7 +154,7 @@
 
 .left p {
   color: #d3d3d3;
-  font-family: Montesrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: justify;
   font-size: 12px;
   line-height: 20px;
@@ -152,7 +163,7 @@
 
 .all-in p {
   color: white;
-  font-family: Montesrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: start;
   font-size: 15px;
   line-height: 20px;
@@ -175,7 +186,7 @@
   border: none;
   border-radius: 8px;
   background: #FBFBFB;
-  font-family: Montserat, sans-serif;
+  font-family: Poppins, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -220,7 +231,7 @@
 
 .right p {
   color: white;
-  font-family: Montesrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: start;
   font-size: 15px;
   line-height: 20px;
@@ -295,7 +306,7 @@ span.highlighted-text {
   gap: 20px;
   text-align: center;
   color: white;
-  font-family: Montserat, sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 400;
 }
 
@@ -416,7 +427,7 @@ span.highlighted-text {
   font-weight: 600;
   font-size: 3.5rem;
   color: #333;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: start;
 }
 
@@ -425,7 +436,7 @@ span.highlighted-text {
   font-weight: 600;
   font-size: 2rem;
   color: #ff3c6e;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: start;
   margin: 20px 0;
 }
@@ -435,7 +446,7 @@ span.highlighted-text {
   font-weight: 400;
   font-size: 17px;
   color: black;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: start;
   line-height: 1.2;
   margin: 10px 0;
@@ -584,9 +595,9 @@ img#title-to-developed {
 }
 
 .seven {
-  background-color: #000000;
-  padding: 60px 0;
-  font-family: Montserrat, sans-serif;
+  background-color: #121212;
+  padding: 10px 20px;
+  font-family: Poppins, sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 27px;
@@ -595,13 +606,15 @@ img#title-to-developed {
 
 .seven p {
   text-align: justify;
-  font-size: 18px;
+  font-size: 15px;
   margin: 20px 0;
+  font-weight: 100;
 }
 
 .seven span:first-child {
-  font-size: 2.6em;
+  font-size: 2.2em;
   line-height: 1.5em;
+  font-weight: 900;
 }
 
 .seven .container {
@@ -635,7 +648,7 @@ footer {
 }
 
 .footer-wave-path {
-  fill: #000000;
+  fill: #121212;
 }
 
 .footer-content {

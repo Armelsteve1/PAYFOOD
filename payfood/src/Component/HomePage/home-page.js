@@ -344,11 +344,13 @@ function LandingPage() {
           </section>
           <section className="seven">
             <div className="container">
-              <div className="all-in black">
+              <div className="all-in-black">
                 <span>Envie de goûter ?</span>
+                <br></br>
                 <span>Cela ne coûte rien de commencer.</span>
-                <p>Payfood est une solution taillée sur mesure pour le secteur de l'hôtellerie-restauration, appuyée par une assistance rapide et personnalisée.</p>
-                <p>Discutons aujourd'hui et voyons comment nous pouvons aider votre entreprise à se développer.</p>
+                <p>Payfood est une solution taillée sur mesure pour le secteur de l'hôtellerie-restauration, appuyée par une assistance rapide et personnalisée.<br></br>
+                <br></br>
+                Discutons aujourd'hui et voyons comment nous pouvons aider votre entreprise à se développer.</p>
                 <button className="contact-button" onClick={() => {
                   const contactPart = document.getElementById("contact-us");
                   if (contactPart) {
