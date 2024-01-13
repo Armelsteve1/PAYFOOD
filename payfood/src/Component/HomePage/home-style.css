@@ -344,18 +344,20 @@ span.highlighted-text {
 
 .fourth {
   background-color: #ffffff;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 20px 0;
+  padding: 10px 20px;
+  margin: 20px 65px 0px;
 }
 
 .fourth .container {
-  width: 50%;
+  width: 100%;
   display: initial;
   color: white;
+  padding: 10px 65px;
+  margin: 20px 70px 0px;
 }
 
 .fourth h2 {
@@ -429,7 +431,7 @@ span.highlighted-text {
 .fourth .container .all-in span {
   display: block;
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: rem;
   color: #333;
   font-family: Poppins, sans-serif;
   text-align: start;
@@ -445,15 +447,19 @@ span.highlighted-text {
   margin: 20px 0;
 }
 
+.fourth .container .all-in span:last-child{
+  color: #E71C6B;
+}
+
 .fourth .container .all-in p {
   display: block;
-  font-weight: 400;
-  font-size: 17px;
-  color: black;
+  font-weight: 100;
+  font-size: 15px;
+  color: #1E2024;
   font-family: Poppins, sans-serif;
   text-align: start;
   line-height: 1.2;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .fourth .container .table-without-table p {
@@ -468,7 +474,7 @@ span.highlighted-text {
 
 .task-done-icon {
   font-size: 24px;
-  margin-right: 10px;
+  margin-right: 30px;
   color: rgb(2 194 179 / 42%);
 }
 
@@ -478,12 +484,13 @@ span.highlighted-text {
   border-top: 0.8px solid rgba(255, 216, 226, 1);
   border-bottom: 1px solid rgba(255, 216, 226, 1);
   padding: 5px 4px;
+  width: 80%;
 }
 
 .fifth {
   background-color: white;
   text-align: center;
-  padding: 40px 0;
+  padding: 0px 0px 40px;
 }
 
 .fifth .container {

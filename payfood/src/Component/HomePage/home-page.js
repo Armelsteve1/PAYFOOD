@@ -264,10 +264,8 @@ function LandingPage() {
           </section >
           <section className="fourth">
             <div className="container">
-              < div className="all-in">
-                <span>Gusto,</span>
-                <span>ajoutez de la magie à l’expérience</span>
-                <span>Votre monnaie virtuelle</span>
+              < div className="all-in">z
+                <span>Gusto, ajoutez de la magie à l’expérience avec <span>votre magie virtuelle.</span></span>
                 <p>Transformez vos clients occasionnels en véritables ambassadeurs de votre marque.</p>
                 <div className="table-without-table">
                   <div className="icon-and-text">
