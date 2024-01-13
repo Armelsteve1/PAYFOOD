@@ -103,7 +103,11 @@
   text-align: center; */
   padding: 10px 65px;
   margin: 20px 0;
-  width: 30%;
+  width: 35%;
+}
+
+.six .container{
+  width: 100%;
 }
 
 .left {
@@ -579,19 +583,30 @@ img#title-to-developed {
   background: #FFC750;
   font-family: Poppins, sans-serif;
   font-weight: 400;
-  padding: 60px 0;
+  padding: 10px 20px;
 }
 
+.container .six{
+  width: 100%;
+}
+
+
 .six p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
   margin: 20px 0;
   color: #1E2024;
+  font-weight: 100;
 }
 
 .six span {
-  font-size: 3em;
+  font-size: 2.2em;
   color: #1E2024;
+}
+
+
+.six .all-in.linear img {
+  margin-left: 300px;
 }
 
 .seven {
