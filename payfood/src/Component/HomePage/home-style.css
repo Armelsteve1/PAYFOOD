@@ -647,11 +647,13 @@ footer {
 }
 
 .footer-content-column {
+  display: flex;
+  justify-content: space-evenly;
   box-sizing: border-box;
   float: left;
   padding-left: 15px;
   padding-right: 15px;
-  width: 24.99%;
+  width: 20%;
   color: #000000;
 }
 

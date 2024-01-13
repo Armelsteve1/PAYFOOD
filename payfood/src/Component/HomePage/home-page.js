@@ -372,6 +372,8 @@ function LandingPage() {
                     <img src={logo} alt='logo de payfood' style={{}}></img>
                   </a>
                 </div>
+              </div>
+              <div className="footer-content-column">
                 <div className="footer-menu">
                   <h2 className="footer-menu-name">A propos</h2>
                   <ul id="menu-get-started" className="footer-menu-list">
@@ -395,6 +397,16 @@ function LandingPage() {
                     </li>
                   </ul>
                 </div>
+              </div>
+              <div className="footer-content-column">
+                <div className="footer-call-to-action">
+                  <h2 className="footer-call-to-action-title">Rejoignez-nous !</h2>
+                  <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" href="tel:+33690295563" target="_blank">+33 6 90 29 55 63</a></p>
+                  <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" target="_blank">16 rue des Mimosas</a></p>
+                  <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" target="_blank">75009 Paris France</a></p>
+                </div>
+              </div>
+              <div className="footer-content-column">
                 <div className="footer-menu">
                   <h2 className="footer-menu-name">Légal</h2>
                   <ul id="menu-legal" className="footer-menu-list">
@@ -405,14 +417,6 @@ function LandingPage() {
                       <a href="#">Conditions d'utilisation</a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div className="footer-content-column">
-                <div className="footer-call-to-action">
-                  <h2 className="footer-call-to-action-title">Rejoignez-nous !</h2>
-                  <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self">+33 6 90 29 55 63</a></p>
-                  <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" target="_self">16 rue des Mimosas</a></p>
-                  <p className="footer-call-to-action-link-wrapper"> <a className="footer-call-to-action-link" target="_self">75015 Paris France</a></p>
                 </div>
               </div>
               <div className="footer-social-links"> <svg className="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
