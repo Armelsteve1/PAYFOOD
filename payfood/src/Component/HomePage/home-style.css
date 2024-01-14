@@ -352,6 +352,12 @@ span.highlighted-text {
   margin: 20px 65px 0px;
 }
 
+.fourth soit-disant {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .fourth .container {
   width: 100%;
   display: initial;
@@ -359,6 +365,11 @@ span.highlighted-text {
   padding: 10px 65px;
   margin: 20px 70px 0px;
 }
+
+.fourth.soit-disant .container {
+  width: 70%;
+}
+
 
 .fourth h2 {
   font-size: 3em;
@@ -389,7 +400,7 @@ span.highlighted-text {
   border-radius: 10px;
   width: 45%;
   height: 250px;
-  margin: 10px;
+  margin: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

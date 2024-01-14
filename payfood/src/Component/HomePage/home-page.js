@@ -225,7 +225,7 @@ function LandingPage() {
               </div>
             </div>
           </section>
-          <section className="fourth">
+          <section className="fourth soit-disant">
             < div className="container">
               <h2>Votre moteur de croissance et d'engagement</h2>
               <div className="grid-container">
