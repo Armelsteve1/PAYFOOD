@@ -195,7 +195,7 @@ function LandingPage() {
             <div className="container">
               <div className="section-header">
                 <span className="section-title">Goûte ça !</span>
-                <span className="section-description">Avec Payfood, vous pourriez réaliser ceci</span>
+                <span className="section-description">Avec Payfood, vous pourrez réaliser..</span>
               </div>
               <div className="grid-container">
                 <div className="grid-item">

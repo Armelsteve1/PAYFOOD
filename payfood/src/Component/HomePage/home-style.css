@@ -110,6 +110,10 @@
   width: 100%;
 }
 
+.third .container{
+  width: unset;
+}
+
 .left {
   flex: 1;
   padding: 10px;
@@ -291,6 +295,10 @@ span.highlighted-text {
 
 }
 
+.third{
+  margin: 0 20px;
+}
+
 .third .section-title {
   font-size: 3em;
   font-weight: bold;
@@ -302,12 +310,13 @@ span.highlighted-text {
   font-size: 18px;
   color: #666;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .third .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 50px;
   text-align: center;
   color: white;
   font-family: Poppins, sans-serif;
