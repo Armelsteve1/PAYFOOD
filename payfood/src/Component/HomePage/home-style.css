@@ -139,8 +139,8 @@
 
 .left span {
   display: inline-block;
-  font-weight: 400;
-  font-size: 0.8rem;
+  font-weight: 100;
+  font-size: 0.89rem;
   color: white;
   margin: 5px 0;
   font-family: Poppins, sans-serif;
@@ -261,7 +261,7 @@
 }
 
 .quote-saying {
-  border: 1px solid CCCCCC;
+  border: 1px solid #CCCCCC;
   padding: 20px;
   border-radius: 8px;
 }
@@ -275,27 +275,58 @@
 
 .container.with-quote {
   align-items: initial;
+  /* width: 300px; 
+  margin: 0 auto; */
+  /* justify-content: space-between;
+  margin-right: 500px; */
 }
+
+.container.with-quote .left {
+margin-right: 0;
+width: 25%;
+}
+
+.container.with-quote .right {
+  margin-left: 40px;
+  /* line-height :30px; */
+  width: 55%;
+  }
 
 .container.with-quote p {
   color: black;
-  margin: 10px 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.container.with-quote .right p {
+  line-height :30px;
 }
 
 .container.with-quote span {
   display: block;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
-.container.with-quote span:nth-child(4),
-.container.with-quote span:nth-child(5) {
-  color: #E71C6B;
+.deuxieme.colored .container.with-quote span{
+  display: inline-block;
+}
+
+.deuxieme.colored .container.with-quote .left .quote-icon {
+  font-size: 50px;
+  font-family: fangsong;
+}
+
+
+.container.with-quote span:nth-child(6),
+.container.with-quote span:nth-child(8) {
+  color: #ff277a;
   margin: inherit;
 }
 
 span.highlighted-text {
   color: #E71C6B;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  /* display: inline-block; */
 }
 
 .third .section-header {
@@ -303,7 +334,7 @@ span.highlighted-text {
   flex-direction: column;
   align-items: start;
   text-align: center;
-  margin: 80px 0 20px;
+  margin: 30px 0 20px;
 
 }
 
@@ -1037,7 +1068,7 @@ footer {
   }
 
   .quote-icon {
-    font-size: 30px;
+    font-size: 0px;
     padding: 0;
     margin: 0;
   }

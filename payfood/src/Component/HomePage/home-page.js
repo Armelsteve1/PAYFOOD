@@ -3,7 +3,7 @@ import "./home-style.css";
 import phone from "./iphone-mockup.svg";
 import logo from "./payfood-logo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVectorSquare } from "@fortawesome/free-solid-svg-icons";
+import { faUserNinja, faVectorSquare } from "@fortawesome/free-solid-svg-icons";
 import resto1 from "./resto1.svg";
 import resto2 from "./resto2.svg";
 import resto3 from "./resto3.svg";
@@ -176,15 +176,15 @@ function LandingPage() {
                 <div className="quote-saying">
                   <span className="quote-icon">&ldquo;</span>
                   <p>Personnel très accueillant et aimable ! Repas très bon et à petit prix ! Mais surtout, je règle ma commande rapidement !</p>
-                  <span>Mélanie Dubois</span>
-                  <span>Restaurant Asian</span>
+                  <FontAwesomeIcon icon={faUserNinja} /><span>&nbsp;&nbsp;Mélanie Dubois</span><br></br>
+                  <span>Restaurant Asian</span><br></br>
                   <span>Foody - Nice</span>
                 </div>
               </div>
               <div className="right">
                 <div className="all-in">
-                  <span>L'ingrédient dont <span className="highlighted-text">tous</span> les restaurants</span>
-                  <span>ont besoin.</span>
+                  <span>L'ingrédient dont <br></br>
+                  <span className="highlighted-text">tous</span> les restaurants ont besoin.</span>
                   <p>Nous apportons un soutien aux professionnels soucieux de fidéliser leur clientèle en leur offrant un système de paiement par QR code facile à utiliser.</p>
                 </div>
               </div>
