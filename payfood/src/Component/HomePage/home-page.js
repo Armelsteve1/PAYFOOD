@@ -124,9 +124,8 @@ function LandingPage() {
           <section className="deuxieme" id="contact-us">
             <div className="container">
               <div className="left">
-                <span>Rejoignez</span>
-                <span>l'expérience</span>
-                <span>Payfood</span>
+                <span>Rejoignez l'expérience</span>
+                <span>&nbsp;Payfood</span>
                 <p>Découvrez l'interface Payfood et toutes ses fonctionnalités. <br></br>Renseignez vos coordonnées pour être rappelé(e) rapidement et organiser une démo.</p>
               </div>
               <div className="right">
@@ -226,8 +225,8 @@ function LandingPage() {
             </div>
           </section>
           <section className="fourth soit-disant">
+            <h2>Votre moteur de croissance et d'engagement</h2>
             < div className="container">
-              <h2>Votre moteur de croissance et d'engagement</h2>
               <div className="grid-container">
                 <div className="grid-row">
                   <div className="grid-item item1">

@@ -47,7 +47,7 @@
 
 .decouvert span:last-child {
   margin: 0 0 20px;
-  color: #FF3C6E;
+  color: #E71C6B;
 }
 
 .text {
@@ -87,11 +87,11 @@
 
 .deuxieme {
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
+  /* text-align: center; */
+  /* padding: 10px; */
 }
 
 
@@ -103,8 +103,8 @@
   text-align: center; */
   padding: 10px 65px;
   margin: 20px 0;
-  width: 35%;
 }
+
 
 .six .container{
   width: 100%;
@@ -114,21 +114,31 @@
   width: unset;
 }
 
+.deuxieme .container {
+  margin: 0;
+}
+
 .left {
-  flex: 1;
+  /* flex: 1; */
   padding: 10px;
+  margin-right: 180px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .right {
-  flex: 1;
+  /* flex: 1; */
   padding: 10px;
   text-align: left;
   margin-left: 40px;
   margin: 20px;
+  width: 250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .left span {
-  display: block;
+  display: inline-block;
   font-weight: 400;
   font-size: 0.8rem;
   color: white;
@@ -161,11 +171,12 @@
 }
 
 .left p {
+  margin: 20px 0;
   color: #d3d3d3;
   font-family: Poppins, sans-serif;
   text-align: justify;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 30px;
   font-weight: 100;
 }
 
@@ -186,6 +197,7 @@
 .right .contact-form {
   display: flex;
   flex-direction: column;
+  /* width: 40%; */
 }
 
 .right input {
@@ -198,7 +210,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #d3d3d3;
+  color: #727272;
 }
 
 .right input::placeholder {
@@ -209,7 +221,7 @@
 .right button {
   background-color: #E71C6B;
   color: white;
-  padding: 6px 30px;
+  padding: 8px 30px;
   border: none;
   border-radius: 8px;
   font-family: "Gill Sans", sans-serif;
@@ -381,10 +393,10 @@ span.highlighted-text {
 
 
 .fourth h2 {
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: bold;
   font-family: Poppins, sans-serif;
-  margin: 40px 0 20px;
+  margin: 40px 0 20px -450px;
   text-align: start;
   line-height: 0.8;
   color: #333;
@@ -661,6 +673,7 @@ img#title-to-developed {
 
 .seven .container {
   text-align: unset;
+  width: 35%;
 }
 
 footer img {
@@ -697,7 +710,7 @@ footer {
   margin-left: 40px;
   margin-right: 40px;
   max-width: 1230px;
-  padding: 80px 20px 350px;
+  padding: 50px 20px 300px;
   position: relative;
 }
 
@@ -869,7 +882,7 @@ footer {
 }
 
 .footer-copyright {
-  background-color: rgba(255, 60, 110, 1);
+  background-color: #E71C6B;
   ;
   color: #5a2020;
   padding: 15px 30px;
