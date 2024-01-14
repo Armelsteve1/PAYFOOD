@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./home-style.css";
-import phone from "./iphone-mockup.svg";
+import phone from "./test.svg";
 import logo from "./payfood-logo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserNinja, faVectorSquare } from "@fortawesome/free-solid-svg-icons";
