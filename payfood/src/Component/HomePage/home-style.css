@@ -419,7 +419,7 @@ span.highlighted-text {
 }
 
 .fourth.soit-disant .container {
-  width: 70%;
+  width: 60%;
 }
 
 
@@ -427,7 +427,7 @@ span.highlighted-text {
   font-size: 2.2em;
   font-weight: bold;
   font-family: Poppins, sans-serif;
-  margin: 40px 0 20px -450px;
+  margin: 40px 0 20px 20px;
   text-align: start;
   line-height: 0.8;
   color: #333;
@@ -450,12 +450,17 @@ span.highlighted-text {
 .fourth .grid-item {
   padding: 20px;
   border-radius: 10px;
-  width: 45%;
-  height: 250px;
-  margin: 10px 20px;
+  width: 50%;
+  height: 180px;
+  margin: 10px 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.fourth .grid-item p {
+  line-height: 25px;
+  color: #fcfbfb;
 }
 
 .fourth .item1 {

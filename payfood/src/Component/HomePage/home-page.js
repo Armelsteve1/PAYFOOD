@@ -231,30 +231,36 @@ function LandingPage() {
                 <div className="grid-row">
                   <div className="grid-item item1">
                     <h3>Créez votre propre devise</h3>
+                    <br></br>
                     <p>Un système de points de fidélité qui transforme chaque achat en récompense.</p>
                   </div>
                   <div className="grid-item item2">
                     <h3>Concentrez-vous sur la cuisine, nous vous amenons les clients</h3>
+                    <br></br>
                     <p>Chacun son métier... nous nous chargeons de mettre à votre disposition un vaste réseau de clients potentiels</p>
                   </div>
                 </div>
                 <div className="grid-row">
                   <div className="grid-item item3">
-                    <h3>Payer, gagner, savourer :</h3>
+                    <h3>Payer, gagner, savourer..</h3>
+                    <br></br>
                     <p>Chaque repas devient une occasion pour votre client de gagner et de savourer. Surprenez-les avec des recommandations personnalisées.</p>
                   </div>
                   <div className="grid-item item4">
-                    <h3>Datalicieux.</h3>
+                    <h3>Datalicieux</h3>
+                    <br></br>
                     <p>Appropriez-vous vos données et personnalisez l'expérience client pour renforcer l'engagement.</p>
                   </div>
                 </div>
                 <div className="grid-row">
                   <div className="grid-item item5">
-                    <h3>Impactez chaque client.</h3>
+                    <h3>Impactez chaque client</h3>
+                    <br></br>
                     <p>Augmentez le nombre de visites et le volume des commandes grâce aux QR codes intelligents et au système de fidélisation de Payfood.</p>
                   </div>
                   <div className="grid-item item6">
                     <h3>Tous les ingrédients pour assurer votre croissance</h3>
+                    <br></br>
                     <p>Attirez plus de clients et élargissez votre présence grâce à notre communauté d'utilisateurs avides de nouvelles expériences culinaires.</p>
                   </div>
                 </div>
