@@ -963,6 +963,7 @@ footer {
 
   .third .grid-container {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .third .section-header {
@@ -1021,30 +1022,77 @@ footer {
     padding: 20px;
   }
 
+  .phone{
+    order: 1;
+    max-width: unset;
+    width: 450px;
+    margin-top: -75px;
+  }
+
   .content {
     width: auto;
     font-family: 'Poppins', sans-serif;
+    order: 2;
+    margin: -30px 0;
+    padding: 10px;
+  }
+
+  .decouvert p{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  .text {
+    justify-content: unset;
+    margin: 20px 0;
+  }
+
+  .contact-button{
+    /* margin: 10px 0; */
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .container{
+    display: unset;
   }
 
   .deuxieme {
-    padding: 20px;
+    padding: 22px;
   }
 
   .deuxieme .container {
     width: 100%;
   }
 
+  .right{
+    width: unset;
+    margin-bottom: -15px;
+    margin-top: -3px;
+  }
+
+  .right input{
+    width: 200px;
+  }
+
   .left {
     padding: 0;
+    margin-right: unset;
   }
 
   .left span,
   .all-in span {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 
   .left span:nth-last-child(2) {
     margin: 0 0 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .left p,
@@ -1052,6 +1100,23 @@ footer {
   .right p {
     font-size: 12px;
     line-height: 18px;
+    margin: unset;
+  }
+
+  .container.with-quote .left{
+    width: unset;
+  }
+
+  .container.with-quote p{
+    margin: unset;
+  }
+
+  .deuxieme.colored .container.with-quote .left .quote-icon{
+    font-size: 1.6em;
+  }
+
+  .container.with-quote .right{
+    width: unset;
   }
 
   .right .contact-form {
@@ -1079,16 +1144,29 @@ footer {
   }
 
   .container.with-quote span {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+  }
+
+  .container {
+    padding: 10px 30px;
+  }
+
+  .container.with-quote .right{
+    margin: unset;
+  }
+
+  .container.with-quote .right p {
+    line-height: 20px;
   }
 
   .container.with-quote span:nth-child(4) {
-    color: #ff3c6e;
+    color: #ffffff;
     margin: 10px 0 0;
   }
 
   .third .section-header {
     margin: 20px 0 10px;
+    align-items: unset;
   }
 
   .third .section-title {
