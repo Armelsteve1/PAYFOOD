@@ -979,7 +979,7 @@ footer {
   }
 
   .fourth .container {
-    width: 80%;
+    width: unset;
   }
 
   .fifth h2 {
@@ -1182,11 +1182,11 @@ footer {
   }
 
   .fourth h2 {
-    font-size: 2.5em;
+    font-size: 1.8em;
   }
 
   .fourth .container .all-in span {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 
   .fourth .grid-container {
@@ -1218,11 +1218,12 @@ footer {
   }
 
   .image-grid img {
-    width: 100px;
+    width: 250px;
   }
 
   img#title-to-developed {
-    padding: 0 25px 70px 0;
+    padding: 0 25px 0px 0;
+    width: 335px;
   }
 
   .six p {
@@ -1245,7 +1246,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
-    padding: 40px 15px 600px;
+    padding: 40px 15px 620px;
     position: relative;
   }
 
@@ -1255,5 +1256,61 @@ footer {
 
   .footer-content-column {
     width: 100%;
+    display: unset;
   }
+  .fourth.soit-disant .container{
+    width: unset;
+    padding: unset;
+  }
+
+  .fourth.soit-disant{
+    margin: unset;
+    padding: unset;
+    display: unset;
+  }
+
+    .fourth .grid-item {
+      margin: 15px 50px;
+      height: auto;
+    }
+
+    .fourth h2{
+      text-align: center;
+      line-height: 1.2;
+      margin: unset;
+    }
+
+    .fourth .container{
+      margin: unset;
+      padding: unset;
+    }
+
+    .fourth{
+      margin: 0px 20px 0px;
+      padding: unset;
+    }
+
+    .icon-and-text{
+      width: unset;
+    }
+
+    .two-images, .three-images{
+      display: none;
+    }
+
+    .image-grid {
+      text-align: unset;
+    }
+
+    .fifth{
+      padding: unset;
+    }
+
+    .six .all-in.linear img{
+      margin: unset;
+    }
+
+    .six .all-in.linear{
+      text-align: center;
+    }
 }
