@@ -25,6 +25,7 @@
 .navbar__link {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .navbar__link.contact {
@@ -40,6 +41,7 @@
 
 .navbar__logo img {
   width: 100px;
+  cursor: pointer;
 }
 
 .menu-toggle {
