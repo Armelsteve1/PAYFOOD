@@ -55,7 +55,7 @@ function LandingPage() {
     e.preventDefault();
 
     //need to change url when starting ngrok
-    fetch('http://localhost:4000/submit', {
+    fetch('http://payfood.org/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
