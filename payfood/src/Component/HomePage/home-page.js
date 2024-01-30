@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import emailjs from '@emailjs/browser';
 import "./home-style.css";
 import phone from "./test.svg";
 import logo from "./payfood-logo.svg"
@@ -69,6 +70,13 @@ function LandingPage() {
             position: toast.POSITION.TOP_RIGHT,
           });
           console.log("Form submission success.", response.status)
+          emailjs
+          .sendForm(
+            'service_payfood_gmbr6ps',
+            'template_2q2pcvj',
+            e.target,
+            'GrqY7nKVhCnvqc8Hm'
+          )
           setFormData({
             name: '',
             email: '',
