@@ -44,6 +44,7 @@ function LandingPage() {
     email: '',
     number: '',
     company: '',
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -73,6 +74,7 @@ function LandingPage() {
             email: '',
             number: '',
             company: '',
+            message: ''
           });
         }
       })
@@ -159,6 +161,14 @@ function LandingPage() {
                     name="company"
                     placeholder="Entreprise"
                     value={formData.company}
+                    onChange={handleChange}
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="message"
+                    placeholder="Message"
+                    value={formData.message}
                     onChange={handleChange}
                     required
                   />

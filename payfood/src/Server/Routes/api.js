@@ -6,12 +6,13 @@ const Contact = require('../contact');
 
 router.post('/submit', (req, res) => {
 
-    const { name, email, number, company } = req.body;
+    const { name, email, number, company, message } = req.body;
     const contact = new Contact({
         name,
         email,
         number,
         company,
+        message
     });
 
     contact.save()
