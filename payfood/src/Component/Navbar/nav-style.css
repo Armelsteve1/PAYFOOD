@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 4em;
+  padding: 0.5em 5.5em;
   font-family: "Poppins", sans-serif;
   background-color: white;
   color: black;
@@ -25,10 +25,11 @@
 .navbar__link {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .navbar__link.contact {
-  background-color: #ff3c6e;
+  background-color: #E71C6B;
   color: white;
   padding: 6px 12px;
   border-radius: 6px;
@@ -40,6 +41,7 @@
 
 .navbar__logo img {
   width: 100px;
+  cursor: pointer;
 }
 
 .menu-toggle {
