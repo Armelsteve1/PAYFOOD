@@ -53,53 +53,59 @@ function LandingPage() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    //need to change url when starting ngrok
-    fetch('https://payfood.org/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => {
-        if (response.status === 200) {
-          toast.success(`Merci ${formData.company} ! Nous vous contacterons bientôt.`, {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-          console.log("Form submission success.", response.status)
-          emailjs
-          .sendForm(
-            'service_payfood_gmbr6ps',
-            'template_2q2pcvj',
-            e.target,
-            'GrqY7nKVhCnvqc8Hm'
-          )
-          setFormData({
-            name: '',
-            email: '',
-            number: '',
-            company: '',
-            message: ''
-          });
-        }
-      })
-      .catch((error) => {
-        console.log("Form submission failed.")
-        console.error('Error:', error);
+  
+    try {
+      const response = await fetch('http://localhost:4000/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.status === 200) {
+        toast.success(`Merci ${formData.company} ! Nous vous contacterons bientôt.`, {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+        console.log("Form submission success.", response.status);
+        console.log(response);
+  
+        await emailjs.sendForm(
+          'service_payfood_gmbr6ps',
+          'template_2q2pcvj',
+          e.target,
+          'GrqY7nKVhCnvqc8Hm'
+        );
+  
+        setFormData({
+          name: '',
+          email: '',
+          number: '',
+          company: '',
+          message: ''
+        });
+  
+        ReactGA.event({
+          category: 'Contact Form',
+          action: 'Submit',
+        });
+        console.log('Event sent');
+      } else {
+        console.log("Form submission failed. Status:", response.status);
         toast.error("Échec de l'envoi du formulaire. Merci de réessayer.", {
           position: toast.POSITION.TOP_RIGHT,
         });
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error("Échec de l'envoi du formulaire. Merci de réessayer.", {
+        position: toast.POSITION.TOP_RIGHT,
       });
-
-    ReactGA.event({
-      category: 'Contact Form',
-      action: 'Submit',
-    });
-    console.log('Event sent');
+    }
   };
+  
 
   ReactGA.pageview("/#contact-us" + window.location.search);
 

@@ -248,6 +248,11 @@
   color: #727272;
 }
 
+.right input:nth-last-child(){
+  height: 300px;
+  color: #727272;
+}
+
 .right input::placeholder {
   color: rgb(176, 173, 173);
   text-transform: uppercase

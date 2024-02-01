@@ -1,4 +1,3 @@
-// routes/api.js
 const express = require('express');
 const router = express.Router();
 
@@ -18,11 +17,11 @@ router.post('/submit', (req, res) => {
     contact.save()
         .then(() => {
             console.log('Data saved to MongoDB');
-            res.json({ success: true });
+            res.json({ success: true, message: 'Data saved to MongoDB' });
         })
         .catch((error) => {
             console.error('Error saving data:', error);
-            res.status(500).json({ error: 'Failed to save data' });
+            res.status(500).json({ success: false, error: 'Failed to save data' });
         });
 });
 
