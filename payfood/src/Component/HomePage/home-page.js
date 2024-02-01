@@ -57,7 +57,7 @@ function LandingPage() {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:4000/submit', {
+      const response = await fetch('https://payfood.org/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
