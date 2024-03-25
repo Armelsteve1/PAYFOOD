@@ -24,7 +24,7 @@ function Restaurants() {
         e.preventDefault();
     
         //need to change url when starting ngrok
-        fetch('http://localhost:4000/submit', {
+        fetch('https://payfood.org:4000/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
