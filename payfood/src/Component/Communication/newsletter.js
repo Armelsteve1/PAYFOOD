@@ -90,24 +90,6 @@ function NewsLetter() {
                     onChange={handleChange}
                     required
                   />
-                  <input
-                    type="tel"
-                    name="number"
-                    placeholder="Téléphone"
-                    value={formData.number}
-                    onChange={handleChange}
-                    required
-                    style="display: none;"
-                  />
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="Entreprise"
-                    value={formData.company}
-                    onChange={handleChange}
-                    required
-                    style="display: none;"
-                  />
                   <div className="button-container">
                     {/* <button type="submit" onClick={() => gaEventTracker('form')}>Envoyez</button> */}
                     <button type="submit">M'abonner 🥳</button>
