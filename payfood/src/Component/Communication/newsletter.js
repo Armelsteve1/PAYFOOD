@@ -10,8 +10,6 @@ function NewsLetter() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        number: '',
-        company: '',
       });
     
       const handleChange = (e) => {
