@@ -3,7 +3,7 @@ import ReactGA from '../../analytics';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import logo from "./payfood-logo.svg"
-
+import emailjs from '@emailjs/browser';
 
 function NewsLetter() {
 
