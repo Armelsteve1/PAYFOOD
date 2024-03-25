@@ -40,6 +40,11 @@ function NavigationBar({ onPageChange }) {
             Contact
           </a>
         </li>
+        <li className="navbar__item">
+          <a className="navbar__link" onClick={() => handleLinkClick('newsletter')}>
+            Newsletter
+          </a>
+        </li>
       </ul>
     </nav>
   );
