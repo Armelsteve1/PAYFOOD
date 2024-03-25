@@ -38,7 +38,9 @@ function NewsLetter() {
               console.log("Form submission success.", response.status)
               setFormData({
                 name: '',
-                email: ''
+                email: '',
+                number: '',
+                company: '',
               });
             }
           })
@@ -87,6 +89,24 @@ function NewsLetter() {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                  />
+                  <input
+                    type="tel"
+                    name="number"
+                    placeholder="Téléphone"
+                    value={formData.number}
+                    onChange={handleChange}
+                    required
+                    style="display: none;"
+                  />
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Entreprise"
+                    value={formData.company}
+                    onChange={handleChange}
+                    required
+                    style="display: none;"
                   />
                   <div className="button-container">
                     {/* <button type="submit" onClick={() => gaEventTracker('form')}>Envoyez</button> */}
