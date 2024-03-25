@@ -66,7 +66,7 @@ function LandingPage() {
       });
   
       if (response.status === 200) {
-        toast.success(`Merci ${formData.company} ! Nous vous contacterons bientôt.`, {
+        toast.success(`Merci ${formData.name} ! Nous vous contacterons bientôt.`, {
           position: toast.POSITION.TOP_RIGHT,
         });
         console.log("Form submission success.", response.status);
@@ -140,9 +140,8 @@ function LandingPage() {
           <section className="deuxieme" id="contact-us">
             <div className="container">
               <div className="left">
-                <span>Rejoignez l'expérience</span>
-                <span>&nbsp;Payfood</span>
-                <p>Découvrez l'interface Payfood et toutes ses fonctionnalités. <br></br>Renseignez vos coordonnées pour être rappelé(e) rapidement et organiser une démo.</p>
+                <span>Des bons plans dans ta boîte mail !</span>
+                <p style={{ fontSize: '17px' }}>Remplis ce formulaire pour être tenu au courant des nouvelles de Payfood et reçevoir des bons plans gourmands. 🍩<br></br></p>
               </div>
               <div className="right">
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -162,33 +161,8 @@ function LandingPage() {
                     onChange={handleChange}
                     required
                   />
-                  <input
-                    type="tel"
-                    name="number"
-                    placeholder="Téléphone"
-                    value={formData.number}
-                    onChange={handleChange}
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="Entreprise"
-                    value={formData.company}
-                    onChange={handleChange}
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="message"
-                    placeholder="Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
                   <div className="button-container">
-                    {/* <button type="submit" onClick={() => gaEventTracker('form')}>Envoyez</button> */}
-                    <button type="submit">Envoyer</button>
+                    <button type="submit">M'abonner 🥳</button>
                   </div>
                 </form>
               </div>
