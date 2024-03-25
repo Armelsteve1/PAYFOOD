@@ -68,7 +68,7 @@ function NewsLetter() {
             <div className="container partners">
               <div className="left partners">
                 <span>Des bons plans dans ta boîte mail !</span>
-                <p>Remplis ce formulaire pour être tenu au courant des nouvelles de Payfood et reçevoir des bons plans gourmands. 🍩<br></br></p>
+                <p style={{ fontSize: '17px' }}>Remplis ce formulaire pour être tenu au courant des nouvelles de Payfood et reçevoir des bons plans gourmands. 🍩<br></br></p>
               </div>
               <div className="right">
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -90,7 +90,7 @@ function NewsLetter() {
                   />
                   <div className="button-container">
                     {/* <button type="submit" onClick={() => gaEventTracker('form')}>Envoyez</button> */}
-                    <button type="submit">Envoyer</button>
+                    <button type="submit">M'abonner 🥳</button>
                   </div>
                 </form>
               </div>
